@@ -1,11 +1,11 @@
 <?php require_once( 'couch/cms.php' ); 
 include('header.php'); ?>
-<cms:template title='Blog_post' clonable='1'>
+<cms:template title='Uudised' clonable='1'>
        <cms:editable name='blog_content' type='richtext' />
        <cms:editable name='blog_image'
            crop='1'
-           width='610'
-           height='200'
+           width='640'
+           height='400'
            type='image'
         />
                 
