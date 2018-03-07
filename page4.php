@@ -1,0 +1,54 @@
+<?php require_once( 'couch/cms.php' ); 
+include('header.php'); ?>
+<cms:template title='Õppetöö' />
+
+
+<section class="engine"><a href="https://mobirise.ws">Mobirise</a></section><section class="mbr-section content4 cid-qLBfffq1Ei" id="content4-1h">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">Õppematerjalid</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-qLBffgr8R1" id="content12-1i">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <div><strong>Noorem tarkvaraarendaja (veebispetsialist)</strong></div><div><strong><br></strong></div><ul>
+                    <li><strong>Materjal 1&nbsp;</strong> - Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Materjal 2&nbsp;</strong>- Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Materjal 3</strong> - Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content12 cid-qLBffhcnrA" id="content12-1j">
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <div><strong>Bürootöö</strong></div><div><strong><br></strong></div><ul>
+                    <li><strong>Materjal 1&nbsp;</strong> - Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Materjal 2&nbsp;</strong>- Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Materjal 3</strong> - Materjali lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php COUCH::invoke(); 
+ include('footer.php'); ?>
