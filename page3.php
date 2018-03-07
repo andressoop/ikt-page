@@ -2,8 +2,8 @@
 include('header.php'); ?>
 <cms:template title='Praktika' />
 
-
-<section class="engine"><a href="https://mobirise.ws">Mobirise</a></section><section class="mbr-section content4 cid-qLBdf21SG5" id="content4-19">
+<cms:editable name='main_content' type='richtext'>
+<section class="mbr-section content4 cid-qLBdf21SG5" id="content4-19">
 
     
 
@@ -49,7 +49,7 @@ include('header.php'); ?>
         </div>
     </div>
 </section>
-
+</cms:editable>
 
 <?php COUCH::invoke(); 
  include('footer.php'); ?>

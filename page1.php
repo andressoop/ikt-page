@@ -2,8 +2,8 @@
 include('header.php'); ?>
 <cms:template title='Erialad' />
 
-
-<section class="engine"><a href="https://mobirise.ws">Mobirise</a></section><section class="mbr-section article content9 cid-qLB6TkMqUd" id="content9-y">
+<cms:editable name='main_content' type='richtext'>
+<section class="mbr-section article content9 cid-qLB6TkMqUd" id="content9-y">
     
      
 
@@ -186,6 +186,6 @@ include('header.php'); ?>
         </div>
     </div>
 </section>
-
+</cms:editable>
 <?php COUCH::invoke(); 
  include('footer.php'); ?>
