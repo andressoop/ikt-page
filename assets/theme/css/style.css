@@ -445,3 +445,9 @@ nav .mbr-section-btn {
 	top: 0;
 	left: -2400px;
 }
+
+.thumb {
+    padding-bottom: 3rem;
+    display: block;
+    margin: auto;
+}

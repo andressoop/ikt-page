@@ -53,7 +53,7 @@
                             <a class="nav-link link text-white display-4" href="page1.php"><span class="mbri-photos mbr-iconfont mbr-iconfont-btn"></span>
                                 Erialad</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page2.php"><span class="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Praktika</a>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="blog_post.php"><span class="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Praktika</a>
                         </li>
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-desktop mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
