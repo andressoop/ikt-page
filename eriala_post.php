@@ -1,8 +1,8 @@
 <?php require_once( 'couch/cms.php' ); 
 include('header.php'); ?>
-<cms:template title='Uudised' clonable='1'>
-       <cms:editable name='blog_content' type='richtext' />
-       <cms:editable name='blog_image'
+<cms:template title='Erialad' clonable='1'>
+       <cms:editable name='eriala_content' type='richtext' />
+       <cms:editable name='eriala_image'
            crop='1'
            width='640'
            height='400'
@@ -11,7 +11,6 @@ include('header.php'); ?>
                 
 </cms:template>
 <cms:if k_is_page >
-
 <section class="mbr-section content4 cid-qLBazTmo1t" id="content4-16">
 
     <div class="container">
@@ -23,20 +22,17 @@ include('header.php'); ?>
     </div>
 </section>
 
-<section class="mbr-section article content1 cid-qLBaAUBRiU" id="content1-17">
-
+<section class="mbr-section article content12 cid-qLBffgr8R1" id="content12-1i">
+     
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
-                <img class="thumb" src="<cms:show blog_image />" alt=""/>
-                <cms:show blog_content />
-                <p>Uudis lisatud <cms:date k_page_date format='d m y'/></p>
-           </div>
+            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                <img class="thumb" src="<cms:show eriala_image />" alt=""/>
+                <cms:show eriala_content />
+            </div>
         </div>
     </div>
-    
 </section>
-<cms:else />
-    <cms:embed 'page2.php' />
 </cms:if>
+
 <?php include('footer.php'); ?>

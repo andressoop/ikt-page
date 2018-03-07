@@ -169,13 +169,13 @@ section {
   .media-container-column > * {
     width: 100%; }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .media-container-row {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; } }
 figure {
-  overflow: hidden; }
+  overflow: hidden; }*/
 
 figure[mbr-media-size] {
   transition: width 0.1s; }
@@ -450,4 +450,6 @@ nav .mbr-section-btn {
     padding-bottom: 3rem;
     display: block;
     margin: auto;
+    max-width: 100%;
+    height: auto;
 }
