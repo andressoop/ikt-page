@@ -24,7 +24,7 @@ include('header.php'); ?>
             </div>
         </div>
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#next">
+            <a href="#features3-j">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
         </div>
@@ -51,7 +51,7 @@ include('header.php'); ?>
             </div>
         </div>
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#next">
+            <a href="#features3-j">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
         </div>
