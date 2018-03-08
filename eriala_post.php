@@ -35,4 +35,5 @@ include('header.php'); ?>
 </section>
 </cms:if>
 
-<?php include('footer.php'); ?>
+<?php COUCH::invoke();
+include('footer.php'); ?>

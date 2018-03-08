@@ -76,4 +76,5 @@ include('header.php'); ?>
         </section>
         
        
-<?php include('footer.php'); ?>
+<?php COUCH::invoke();
+include('footer.php'); ?>

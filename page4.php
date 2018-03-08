@@ -50,4 +50,5 @@ include('header.php'); ?>
     </div>
 </section>
 </cms:editable>
-<?php include('footer.php'); ?>
+<?php COUCH::invoke();
+include('footer.php'); ?>

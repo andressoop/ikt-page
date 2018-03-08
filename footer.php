@@ -1,12 +1,10 @@
-<cms:template title='Kontaktid' />
                   
-                   <section class="cid-qLAZXJYIHL" id="footer2-h">
+        <section class="cid-qLAZXJYIHL" id="footer2-h">
 
             <div class="container">
                 <div class="media-container-row content mbr-white">
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                           <cms:editable name='contact_details' label='Kontaktandmed' type='richtext'>
                             <strong>Aadress</strong>
                             <br>
                             <br>Tartu Kutsehariduskeskus
@@ -15,15 +13,12 @@
                             <br><strong>Kontakt</strong><br>
                             <br>E-post: info@khk.ee
                             <br>Telefon: 7 361 866<br>
-                            </cms:editable>
                         </p>
                     </div>
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                        <cms:editable name='contact_links' label='Lingid' type='richtext'>
                             <strong>Lingid</strong>&nbsp;<br>
                             <br><a class="text-primary" href="http://khk.ee" target="_blank">Tartu Kutsehariduskeskus</a><br><a class="text-primary" href="https://moodle.hitsa.ee" target="_blank">Moodle</a>&nbsp;<br><a class="text-primary" href="https://tkhk.siseveeb.ee/veebivormid/tunniplaan" target="_blank">Tunniplaan</a>&nbsp;<br><br>
-                        </cms:editable>
                         </p>
                         <div class="footer-lower">
                             <div class="social-list">
@@ -78,4 +73,3 @@
 
     </body>
 </html>
-<?php COUCH::invoke(); ?>

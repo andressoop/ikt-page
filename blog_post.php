@@ -39,4 +39,5 @@ include('header.php'); ?>
 <cms:else />
     <cms:embed 'page2.php' />
 </cms:if>
-<?php include('footer.php'); ?>
+<?php COUCH::invoke(); 
+ include('footer.php'); ?>
