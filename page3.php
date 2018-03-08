@@ -25,9 +25,9 @@ include('header.php'); ?>
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <div><strong>Noorem tarkvaraarendaja (veebispetsialist)</strong></div><div><strong><br></strong></div><ul>
-                    <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
-                    <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
-                    <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
+                    <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
+                    <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
                 </ul>
             </div>
         </div>
@@ -41,9 +41,9 @@ include('header.php'); ?>
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <div><strong>Bürootöö</strong></div><div><strong><br></strong></div><ul>
-                    <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
-                    <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
-                    <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="https://mobirise.com/">Vaata siit!</a></li>
+                    <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
+                    <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
+                    <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
                 </ul>
             </div>
         </div>

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="shortcut icon" href="assets/images/khk-logod-kurv-5-122x51.png" type="image/x-icon">
         <meta name="description" content="">
-        <title>Home</title>
+        <title>IKT osakond</title>
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
         <link rel="stylesheet" href="assets/tether/tether.min.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="assets/dropdown/css/style.css">
         <link rel="stylesheet" href="assets/theme/css/style.css">
         <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+        <link rel="stylesheet" href="assets/flag-icon-css/css/flag-icon.css">
 
 
     </head>
@@ -58,6 +59,8 @@
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-desktop mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
                     <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a></div>
+                    <a href=""><span class="flag-icon flag-icon-ee"></span></a>
+                    <a href=""><span class="flag-icon flag-icon-gb"></span></a>
                 </div>
             </nav>
         </section>

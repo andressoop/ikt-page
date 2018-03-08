@@ -329,13 +329,13 @@
                 var videoURL = $(this).attr('data-bg-video');
                 var parsedUrl = videoURL.match(/(http:\/\/|https:\/\/|)?(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
-                var $img = $('<div class="mbr-background-video-preview">')
+               /* var $img = $('<div class="mbr-background-video-preview">')
                     .hide()
                     .css({
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     });
-                $('> *:eq(0)', this).before($img);
+                $('> *:eq(0)', this).before($img);*/
 
                 // youtube or vimeo
                 if (parsedUrl && (/youtube/g.test(parsedUrl[3]) || /vimeo/g.test(parsedUrl[3]))) {

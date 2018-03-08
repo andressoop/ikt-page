@@ -262,7 +262,7 @@ nav .mbr-section-btn {
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem; 
-  background-image: url(/dev/ikt-page/assets/images/bg-img.jpg);}
+  background-image: url(/assets/images/bg-img.jpg);}
 
 /*! small screen sizes  */
 @media (max-width: 991px) {
@@ -452,4 +452,10 @@ nav .mbr-section-btn {
     margin: auto;
     max-width: 100%;
     height: auto;
+}
+
+.li-horizontal {
+    float: left;
+    margin-left: 1em;
+    list-style-type: none;
 }
