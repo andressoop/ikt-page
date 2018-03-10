@@ -86,7 +86,7 @@
                         <div><strong>Postituste arhiiv</strong></div><div><strong><br></strong></div>
                         <ul>
                            <cms:archives masterpage='blog_post.php'>
-                            <li class="li-horizontal"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='F Y' locale='estonian' /></a></li>
+                            <li class="li-horizontal"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a></li>
                             </cms:archives>                            
                         </ul>
                     </div>

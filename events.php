@@ -54,12 +54,12 @@ include('header.php'); ?>
                     <h2><cms:show k_page_title /></h2><br>
                     <b>Kirjeldus:</b> <cms:show desc /><br>
                     <b>Asukoht:</b> <cms:show location /><br>
-                    <b>Kuupäev:</b> <cms:date k_page_date format='F j, Y' /><br>
+                    <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
                     <cms:if start_time!='Unspecified' >
                         <b>Algusaeg:</b> <cms:show start_time /><br>
                     </cms:if>
                     <cms:if "<cms:not_empty end_date />" >
-                        <b>Kuni:</b> <cms:date end_date format='F j, Y' /><br>
+                        <b>Kuni:</b> <cms:date end_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
                     </cms:if>
                     <cms:if end_time!='Unspecified' >
                         <b>Lõpuaeg:</b> <cms:show end_time /><br>
@@ -80,7 +80,7 @@ include('header.php'); ?>
                     <table class="calendar_big">
                         <tr>
                             <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
-                            <th colspan="5"><cms:date k_calendar_date format='%B %Y' locale="estonian" /></th>
+                            <th colspan="5"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></th>
                             <th><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></th>
                         </tr>
                         <tr>
