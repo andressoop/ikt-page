@@ -983,7 +983,7 @@
                     });
                     indicators.bind('click',function(event){
                         clickPrev(event);
-                    })
+                    });
                     $slider.carousel({
                         keyboard:false
                     });

@@ -224,8 +224,8 @@ figure[mbr-media-size] {
   font-size: 0; }
 
 nav .mbr-section-btn {
-  margin-left: 0rem;
-  margin-right: 0rem; }
+  margin-left: 0;
+  margin-right: 0; }
 
 /*! Btn icon margin */
 .btn .mbr-iconfont, .btn.btn-sm .mbr-iconfont {
@@ -399,17 +399,17 @@ nav .mbr-section-btn {
 /*Gradients animation*/
 @keyframes gradient-animation {
   from {
-    background-position: 0% 100%;
+    background-position: 0 100%;
     animation-timing-function: ease-in-out; }
   to {
-    background-position: 100% 0%;
+    background-position: 100% 0;
     animation-timing-function: ease-in-out; } }
 @-webkit-keyframes gradient-animation {
   from {
-    background-position: 0% 100%;
+    background-position: 0 100%;
     animation-timing-function: ease-in-out; }
   to {
-    background-position: 100% 0%;
+    background-position: 100% 0;
     animation-timing-function: ease-in-out; } }
 .bg-gradient {
   background-size: 200% 200%;

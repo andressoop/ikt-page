@@ -158,7 +158,6 @@
 
 .nav-dropdown-sm {
   display: block !important;
-  overflow-x: hidden;
   overflow: auto;
   padding-top: 3.875rem; }
   .nav-dropdown-sm::after {
@@ -255,8 +254,8 @@
 
 .navbar-toggleable-sm.opened .nav-dropdown .dropdown-submenu {
   left: 0;
-  margin-left: 00rem;
-  margin-top: 0rem;
+  margin-left: 0;
+  margin-top: 0;
   top: 0; }
 
 .is-builder .nav-dropdown.collapsing {
