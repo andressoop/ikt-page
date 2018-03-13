@@ -1,2 +1,0 @@
-[08-Mar-2018 01:54:03 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/sandraandres/public_html/couch/includes/mysql2i/mysql2i.class.php on line 139
-[08-Mar-2018 01:54:33 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/sandraandres/public_html/couch/includes/mysql2i/mysql2i.class.php on line 139
