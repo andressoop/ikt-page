@@ -265,26 +265,6 @@ nav .mbr-section-btn {
   background-image: url(bg-img.jpg);
 }
 
-/*! small screen sizes  */
-@media (max-width: 991px) {
-    .mobile-only {
-        display:flex !important;
-    }
- 
-    .desktop-only {
-        display:none !important;
-    }
-}
-@media (min-width: 991px) {
-    .mobile-only {
-        display:none !important;
-    }
- 
-    .desktop-only {
-        display:flex!important;
-    }
-}
-
 /*! Map */
 .map {
   height: 25rem;

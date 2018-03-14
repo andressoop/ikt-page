@@ -329,45 +329,10 @@
                 var videoURL = $(this).attr('data-bg-video');
                 var parsedUrl = videoURL.match(/(http:\/\/|https:\/\/|)?(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
-               /* var $img = $('<div class="mbr-background-video-preview">')
-                    .hide()
-                    .css({
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'
-                    });
-                $('> *:eq(0)', this).before($img);*/
-
                 // youtube or vimeo
                 if (parsedUrl && (/youtube/g.test(parsedUrl[3]) || /vimeo/g.test(parsedUrl[3]))) {
                     // youtube
                     if (parsedUrl && /youtube/g.test(parsedUrl[3])) {
-                        var previewURL = 'http' + ('https:' === location.protocol ? 's' : '') + ':';
-                        previewURL += '//img.youtube.com/vi/' + parsedUrl[6] + '/maxresdefault.jpg';
-
-                        $('<img>').on('load', function() {
-                            if (120 === (this.naturalWidth || this.width)) {
-                                // selection of preview in the best quality
-                                var file = this.src.split('/').pop();
-
-                                switch (file) {
-                                    case 'maxresdefault.jpg':
-                                        this.src = this.src.replace(file, 'sddefault.jpg');
-                                        break;
-                                    case 'sddefault.jpg':
-                                        this.src = this.src.replace(file, 'hqdefault.jpg');
-                                        break;
-                                    default: // image not found
-                                        if (isBuilder) {
-                                            $img.css('background-image', 'url("images/no-video.jpg")')
-                                                .show();
-                                        }
-                                }
-                            } else {
-                                $img.css('background-image', 'url("' + this.src + '")')
-                                    .show();
-                            }
-                        }).attr('src', previewURL);
-
                         if ($.fn.YTPlayer && !isBuilder && !$.isMobile()) {
                             $('> *:eq(1)', this).before('<div class="mbr-background-video"></div>').prev()
                                 .YTPlayer({
@@ -406,9 +371,6 @@
                                 });
                         }
                     }
-                } else if (isBuilder) { // neither youtube nor vimeo
-                    $img.css('background-image', 'url("images/video-placeholder.jpg")')
-                        .show();
                 }
             });
         }
