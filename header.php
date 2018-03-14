@@ -19,12 +19,12 @@
         <link rel="stylesheet" href="assets/theme/css/style.css">
         <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
         <link rel="stylesheet" href="assets/flag-icon-css/css/flag-icon.css">
-        <link rel="stylesheet" href="calendar.css"
+        <link rel="stylesheet" href="calendar.css">
 
 
     </head>
     <body>
-        <section class="menu cid-qLAG2afcTl" once="menu" id="menu1-e">
+        <section class="menu cid-qLAG2afcTl" id="menu1-e">
 
             <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
