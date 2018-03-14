@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="generator" content="Mobirise v4.6.6, mobirise.com">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <link rel="shortcut icon" href="assets/images/khk-logod-kurv-5-122x51.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/images/KHK_logod_icon.png" type="image/x-icon">
         <meta name="description" content="">
         <title>IKT osakond</title>
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
