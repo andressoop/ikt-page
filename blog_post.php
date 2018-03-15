@@ -28,10 +28,10 @@ include('header.php'); ?>
     <div class="container">
         <div class="media-container-row">
             <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
                 <cms:show blog_content />
-                <p>Uudis lisatud <cms:date k_page_date format='d m y'/></p>
-           </div>
+            </div>
         </div>
     </div>
     

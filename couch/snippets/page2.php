@@ -16,7 +16,11 @@
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12">
                 <!--   Postitused  -->
-                <cms:pages masterpage='blog_post.php' paginate='1' limit='10'>
+                <cms:pages masterpage='blog_post.php'
+                           start_on=k_archive_date
+                           stop_before=k_next_archive_date
+                           paginate='1'
+                           limit='10' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">
@@ -26,8 +30,11 @@
                         </div>
                         <div class="media-container-row">
                             <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+
+                                <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
                                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
-                                <cms:excerptHTML count='75' ignore='img'><cms:show blog_content /></cms:excerptHTML> <a href="<cms:show k_page_link />">Loe tervet artiklit</a>
+                                <cms:excerptHTML count='75' ignore='img'><cms:show blog_content /></cms:excerptHTML>
+                                <a href="<cms:show k_page_link />">Loe tervet artiklit</a>
 
                             </div>
                         </div>
