@@ -23,7 +23,7 @@ include('header.php'); ?>
             </div>
         </div>
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#features3-j">
+            <a href="#features-news">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
         </div>
@@ -31,7 +31,7 @@ include('header.php'); ?>
     </section>
 
     <!-- Uudised -->
-    <section class="features3 cid-qLB07fbsZZ" id="features3-j">
+    <section class="features" id="features-news">
         
         <div class="container">
             <div class="media-container-row">

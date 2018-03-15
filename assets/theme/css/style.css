@@ -435,8 +435,7 @@ nav .mbr-section-btn {
     height: auto;
 }
 
-.li-horizontal {
-    float: left;
-    margin-left: 1em;
-    list-style-type: none;
+.sidebar-title {
+  font-weight: bold;
+  padding: 1em 0;
 }

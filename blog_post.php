@@ -23,7 +23,7 @@ include('header.php'); ?>
     </div>
 </section>
 
-<section class="mbr-section article content1 cid-qLBaAUBRiU" id="content1-17">
+<section class="mbr-section article content1 blog-posts" id="content1-17">
 
     <div class="container">
         <div class="media-container-row">
