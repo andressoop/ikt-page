@@ -20,7 +20,7 @@
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
-                           limit='10' >
+                           limit='1' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">
@@ -39,6 +39,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <cms:if k_paginated_bottom>
+                    <!-- Navigeerimisnupud -->
+                    <div class="media-container-row">
+                        <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+
+                            <div class="mbr-section-btn text-center">
+                                <cms:if k_paginate_link_next >
+                                <a href="<cms:show k_paginate_link_next />" class="btn btn-secondary display-4">Vanemad postitused<br></a>
+                                </cms:if>
+                                <cms:if k_paginate_link_prev >
+                                <a href="<cms:show k_paginate_link_prev />" class="btn btn-secondary display-4">Uuemad postitused<br></a>
+                                </cms:if>
+                            </div>
+
+                        </div>
+                    </div>
+                    </cms:if>
 
                 </cms:pages>
 
