@@ -32,6 +32,9 @@ include('header.php'); ?>
                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
                 <cms:show blog_content />
             </div>
+            <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                <a href="#" onclick="goBack()">Tagasi</a>
+            </div>
         </div>
     </div>
     
