@@ -46,17 +46,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                        <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="index.php">
-                                <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Avaleht</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="page1.php"><span class="mbri-photos mbr-iconfont mbr-iconfont-btn"></span>
-                                Erialad</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="blog_post.php"><span class="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Praktika</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-desktop mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Avaleht</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page1.php"><span class="mbri-features mbr-iconfont mbr-iconfont-btn"></span>Erialad</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="blog_post.php"><span class="mbri-sun mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Praktika</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
                     <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
                     </div>
