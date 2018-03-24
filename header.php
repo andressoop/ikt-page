@@ -23,7 +23,7 @@
 
     </head>
     <body>
-        <section class="menu cid-qLAG2afcTl" id="menu1-e">
+        <section class="header-menu">
 
             <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
