@@ -439,3 +439,11 @@ nav .mbr-section-btn {
   font-weight: bold;
   padding: 1em 0;
 }
+
+.navbar-flags {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0.3em 0;
+}

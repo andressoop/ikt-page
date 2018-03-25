@@ -52,11 +52,12 @@
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Praktika</a></li>
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
-                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
+                    <div class="navbar-buttons mbr-section-btn">
+                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
                     </div>
-                    <div class="align-center">
-                    <a href=""><span class="flag-icon flag-icon-ee"></span></a>
-                    <a href=""><span class="flag-icon flag-icon-gb"></span></a>
+                    <div class="navbar-flags">
+                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-ee"></span></a></div>
+                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-gb"></span></a></div>
                     </div>
                 </div>
             </nav>

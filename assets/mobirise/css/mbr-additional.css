@@ -1414,7 +1414,7 @@ body {
 }
 .header-menu .menu-logo .navbar-brand {
   display: flex;
-  margin-left: 5rem;
+  margin-left: 4rem;
   padding: 0;
   transition: padding .2s;
   min-height: 3.8rem;
@@ -1445,7 +1445,7 @@ body {
 .header-menu .navbar-toggleable-sm .navbar-collapse {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
-  padding-right: 5rem;
+  padding-right: 4rem;
   width: auto;
 }
 .header-menu .navbar-toggleable-sm .navbar-collapse .navbar-nav {
