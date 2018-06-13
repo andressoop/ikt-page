@@ -56,6 +56,47 @@
                     </div>
                 </div>
             </div>
+
+<!--            Floating contact form -->
+            <button class="btn-primary float-button"><span class="mbri-letter float-button-inner"></span></button>
+
+            <div id="contact-form" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-md">
+
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h4 class="modal-title">Kirjuta meile</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form  method="post" action="contact.php" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-field" name="name" placeholder="Ees- ja perekonnanimi"  required>
+                                    <div class="invalid-feedback">
+                                        Palun sisestage oma nimi.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-field" name="email" placeholder="Sinu e-posti aadress"  required>
+                                    <div class="invalid-feedback">
+                                        Palun sisestaga korrektne e-posti aadress, et saaksime teile vastata.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control form-field" name="message" placeholder="Kirja sisu" row="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Palun lisage kirjale ka sisu.
+                                    </div>
+                                </div>
+                                <div class="form-group mbr-section-btn text-center">
+                                    <button type="submit" class="btn btn-secondary display-4">Saada</button>
+                                </div>
+                                <div class="messages"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 

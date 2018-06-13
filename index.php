@@ -6,16 +6,16 @@ include('header.php'); ?>
     <!-- Avakuva koos videoga -->
     <section class="mbr-fullscreen" data-bg-video="<cms:editable name='main_video' type='richtext'>https://www.youtube.com/embed/a_IuD6VioIs</cms:editable>?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1">
 
-        <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(46, 46, 46);"></div>
+        <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(46, 46, 46);"></div>
         <div class="container align-center">
             <div class="row justify-content-md-center">
-                <div class="mbr-white col-md-10">
+                <div class="mbr-white col-md-10 title-area">
                     <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
                         <cms:editable name='main_title' type='richtext'>INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND</cms:editable>
                     </h1>
-                    <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                    <!--<p class="mbr-text pb-3 mbr-fonts-style display-5">
                         <cms:editable name='main_tag' type='richtext'>Kõik on siin Keeniused Keeniused Keeniused Keeniused Keeniused Keeniused Keeniused Keeniused ja Keeniused.</cms:editable>
-                    </p>
+                    </p>-->
                     <div class="mbr-section-btn">
                         <a class="btn btn-md btn-secondary display-4" href="page1.php">TULE ÕPPIMA</a>
                     </div>

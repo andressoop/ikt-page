@@ -74,6 +74,9 @@ section {
 .mbr-z-index20 {
   z-index: 20; }
 
+.title-area {
+  margin-top: 10%; }
+
 /*! Base colors */
 .mbr-white {
   color: #ffffff; }
@@ -446,4 +449,58 @@ nav .mbr-section-btn {
   justify-content: center;
   -webkit-justify-content: center;
   margin: 0.3em 0;
+}
+
+/* Floating contact form */
+
+.float-button{
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 100px;
+    border-width: 2px;
+    border-style: solid;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.float-button:hover, .float-button:focus {
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.float-button-inner{
+    position: relative;
+    top: 1px;
+    font-size: 2rem;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+button.btn {
+    border-radius: 100px;
+}
+
+.modal-header {
+  background-color: #0054a6;
+}
+.modal-title {
+  color: #fff;
+}
+
+.form-field {
+  width: 100%;
 }
