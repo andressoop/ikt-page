@@ -43,7 +43,7 @@ include('header.php'); ?>
 </cms:template>
 
 <!-- Event's information-->
-<section class="mbr-section content4 cid-qLBazTmo1t" id="content4-16">
+<section class="mbr-section content4 eriala-head" id="content4-16">
 
     <div class="container">
         <div class="media-container-row align-center">
@@ -73,7 +73,7 @@ include('header.php'); ?>
     </div>
 </section>
    
-<section class="mbr-section content4 cid-qLBazTmo1t" id="content4-16">  
+<section class="mbr-section content4 eriala-head" id="content4-16">
         <div class="container">
             <div class="media-container-row">
             <cms:calendar date="<cms:gpc 'cal' />" masterpage='events.php' week_starts='1' show_future_entries='1'>

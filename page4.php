@@ -16,7 +16,7 @@ include('header.php'); ?>
     </div>
 </section>
 
-<section class="mbr-section article content12 cid-qLBffgr8R1" id="content12-1i">
+<section class="mbr-section article content12 eriala-content" id="content12-1i">
      
     <div class="container">
         <div class="media-container-row">
