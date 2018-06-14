@@ -48,7 +48,7 @@ include('header.php'); ?>
         </div>
     </section>
 
-    <section class="erialad-loetelu">
+    <section class="erialad-list">
         <div class="container">
             <div class="media-container-row">
                 <div class="col-lg-12">
