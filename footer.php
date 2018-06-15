@@ -46,12 +46,10 @@
                         </div>
                     </div>
                     <div class="media-container-row mbr-white">
-                        <div class="col-sm-6 copyright">
+                        <div class="col-sm-12 copyright">
                             <p class="mbr-text mbr-fonts-style display-7">
-                                © Copyright 2018 Sandra ja Andres - All Rights Reserved
+                                Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/" target="_blank">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/" target="_blank">Andres Soop</a>.
                             </p>
-                        </div>
-                        <div class="col-md-6">
                         </div>
                     </div>
                 </div>
