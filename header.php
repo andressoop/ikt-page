@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="assets/socicon/css/styles.css">
         <link rel="stylesheet" href="assets/dropdown/css/style.css">
         <link rel="stylesheet" href="assets/theme/css/style.css">
-        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
         <link rel="stylesheet" href="assets/flag-icon-css/css/flag-icon.css">
         <link rel="stylesheet" href="calendar.css">
 
