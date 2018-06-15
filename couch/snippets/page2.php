@@ -20,7 +20,7 @@
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
-                           limit='1' >
+                           limit='10' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">

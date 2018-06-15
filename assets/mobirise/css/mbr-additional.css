@@ -118,6 +118,16 @@ body {
   padding: 1rem 3rem;
   border-radius: 3px;
 }
+.btn-md-comment {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: .4rem !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+}
 .btn-lg {
   font-weight: 500;
   letter-spacing: 1px;

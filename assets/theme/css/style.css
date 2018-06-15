@@ -504,3 +504,17 @@ button.btn {
 .form-field {
   width: 100%;
 }
+
+/* Comments */
+.comment-section {
+  margin: 40px 0 30px 0;
+}
+
+.comment-date {
+  font-size: 80%;
+  margin-bottom: 3px;
+}
+
+.comment-ol {
+  list-style: none;
+}
