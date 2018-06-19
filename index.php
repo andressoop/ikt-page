@@ -4,8 +4,7 @@ include('header.php'); ?>
 
 
     <!-- Avakuva koos videoga -->
-    <section class="mbr-fullscreen"
-             data-bg-video="<cms:editable name='main_video' type='richtext'>https://www.youtube.com/embed/a_IuD6VioIs</cms:editable>?rel=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1">
+    <section class="mbr-fullscreen">
 
         <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(46, 46, 46);"></div>
         <div class="container align-center">
