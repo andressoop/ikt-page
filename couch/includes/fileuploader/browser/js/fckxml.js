@@ -94,7 +94,8 @@ FCKXml.prototype.LoadUrl = function( urlToCall, asyncFunctionPointer )
 		}
 	}
 
-	oXmlHttp.send( null ) ;    try { oXmlHttp.responseType = 'msxml-document'; } catch(e){}
+	oXmlHttp.send( null ) ;
+    try { oXmlHttp.responseType = 'msxml-document'; } catch(e){}
 
 	if ( ! bAsync )
 	{

@@ -494,7 +494,7 @@ var clearCacheTimer;
 
 function scheduleClearCache() {
     clearTimeout(clearCacheTimer);
-    clearCacheTimer = setInterval(function () { cache = {}; }, 1*1000);
+    clearCacheTimer = setInterval(function () { cache = {}; }, 1000);
 }
 
 function setCache(elems, overflowing) {

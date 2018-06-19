@@ -10,4 +10,4 @@ window.onload = function () {
       window.open('flags/4x3/' + flag + '.svg', 'flag-4x3', 'width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
     }
   });
-}
+};

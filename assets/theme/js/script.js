@@ -329,45 +329,10 @@
                 var videoURL = $(this).attr('data-bg-video');
                 var parsedUrl = videoURL.match(/(http:\/\/|https:\/\/|)?(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
-               /* var $img = $('<div class="mbr-background-video-preview">')
-                    .hide()
-                    .css({
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'
-                    });
-                $('> *:eq(0)', this).before($img);*/
-
                 // youtube or vimeo
                 if (parsedUrl && (/youtube/g.test(parsedUrl[3]) || /vimeo/g.test(parsedUrl[3]))) {
                     // youtube
                     if (parsedUrl && /youtube/g.test(parsedUrl[3])) {
-                        var previewURL = 'http' + ('https:' === location.protocol ? 's' : '') + ':';
-                        previewURL += '//img.youtube.com/vi/' + parsedUrl[6] + '/maxresdefault.jpg';
-
-                        $('<img>').on('load', function() {
-                            if (120 === (this.naturalWidth || this.width)) {
-                                // selection of preview in the best quality
-                                var file = this.src.split('/').pop();
-
-                                switch (file) {
-                                    case 'maxresdefault.jpg':
-                                        this.src = this.src.replace(file, 'sddefault.jpg');
-                                        break;
-                                    case 'sddefault.jpg':
-                                        this.src = this.src.replace(file, 'hqdefault.jpg');
-                                        break;
-                                    default: // image not found
-                                        if (isBuilder) {
-                                            $img.css('background-image', 'url("images/no-video.jpg")')
-                                                .show();
-                                        }
-                                }
-                            } else {
-                                $img.css('background-image', 'url("' + this.src + '")')
-                                    .show();
-                            }
-                        }).attr('src', previewURL);
-
                         if ($.fn.YTPlayer && !isBuilder && !$.isMobile()) {
                             $('> *:eq(1)', this).before('<div class="mbr-background-video"></div>').prev()
                                 .YTPlayer({
@@ -406,9 +371,6 @@
                                 });
                         }
                     }
-                } else if (isBuilder) { // neither youtube nor vimeo
-                    $img.css('background-image', 'url("images/video-placeholder.jpg")')
-                        .show();
                 }
             });
         }
@@ -983,7 +945,7 @@
                     });
                     indicators.bind('click',function(event){
                         clickPrev(event);
-                    })
+                    });
                     $slider.carousel({
                         keyboard:false
                     });
@@ -1003,3 +965,33 @@
     }
 })(jQuery);
 !function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.me">Mobirise</a> Mobirise v4.6.6';document.body.insertBefore(a,document.body.childNodes[0])}}();
+function goBack(){
+    window.history.back();
+}
+
+
+// Floating contact form button
+$(function() {
+    $(".float-button").click(function() {
+        $("#contact-form").modal('show');
+    });
+});
+
+// Floating contact form submission disable if there are invalid fields
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();

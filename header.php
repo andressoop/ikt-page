@@ -4,9 +4,8 @@
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="generator" content="Mobirise v4.6.6, mobirise.com">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <link rel="shortcut icon" href="assets/images/khk-logod-kurv-5-122x51.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/images/KHK_logod_icon.png" type="image/x-icon">
         <meta name="description" content="">
         <title>IKT osakond</title>
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -17,13 +16,13 @@
         <link rel="stylesheet" href="assets/socicon/css/styles.css">
         <link rel="stylesheet" href="assets/dropdown/css/style.css">
         <link rel="stylesheet" href="assets/theme/css/style.css">
-        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
         <link rel="stylesheet" href="assets/flag-icon-css/css/flag-icon.css">
+        <link rel="stylesheet" href="calendar.css">
 
 
     </head>
     <body>
-        <section class="menu cid-qLAG2afcTl" once="menu" id="menu1-e">
+        <section class="header-menu">
 
             <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +45,18 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                        <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="index.php">
-                                <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Avaleht</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="page1.php"><span class="mbri-photos mbr-iconfont mbr-iconfont-btn"></span>
-                                Erialad</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="blog_post.php"><span class="mbri-cust-feedback mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-briefcase mbr-iconfont mbr-iconfont-btn"></span>Praktika</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-desktop mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Avaleht</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page1.php"><span class="mbri-features mbr-iconfont mbr-iconfont-btn"></span>Erialad</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="blog_post.php"><span class="mbri-sun mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page3.php"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Praktika</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="page4.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
-                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
+                    <div class="navbar-buttons mbr-section-btn">
+                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
                     </div>
-                    <div class="align-center">
-                    <a href=""><span class="flag-icon flag-icon-ee"></span></a>
-                    <a href=""><span class="flag-icon flag-icon-gb"></span></a>
+                    <div class="navbar-flags">
+                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-ee"></span></a></div>
+                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-gb"></span></a></div>
                     </div>
                 </div>
             </nav>

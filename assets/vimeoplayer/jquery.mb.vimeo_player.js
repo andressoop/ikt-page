@@ -189,7 +189,7 @@ var get_vimeo_videoID = function( url ) {
 							backgroundRepeat: "no-repeat",
 							opacity: 1
 						} )
-					};
+					}
 
 					$vimeo_player.remove();
 					return;
@@ -977,7 +977,7 @@ var get_vimeo_videoID = function( url ) {
 	jQuery.fn.v_toggle_volume = jQuery.vimeo_player.toggleVolume;
 
 } )( jQuery );
-;/*___________________________________________________________________________________________________________________________________________________
+/*___________________________________________________________________________________________________________________________________________________
  _ jquery.mb.components                                                                                                                             _
  _                                                                                                                                                  _
  _ file: jquery.mb.browser.min.js                                                                                                                   _
@@ -1008,7 +1008,7 @@ if(!jQuery.browser){var isTouchSupported=function(){var a=nAgt.msMaxTouchPoints,
 (jQuery.browser.fullVersion=jQuery.browser.fullVersion.substring(0,ix));-1!=(ix=jQuery.browser.fullVersion.indexOf(" "))&&(jQuery.browser.fullVersion=jQuery.browser.fullVersion.substring(0,ix));jQuery.browser.majorVersion=parseInt(""+jQuery.browser.fullVersion,10);isNaN(jQuery.browser.majorVersion)&&(jQuery.browser.fullVersion=""+parseFloat(navigator.appVersion),jQuery.browser.majorVersion=parseInt(navigator.appVersion,10));jQuery.browser.version=jQuery.browser.majorVersion}
 jQuery.browser.android=/Android/i.test(nAgt);jQuery.browser.blackberry=/BlackBerry|BB|PlayBook/i.test(nAgt);jQuery.browser.ios=/iPhone|iPad|iPod|webOS/i.test(nAgt);jQuery.browser.operaMobile=/Opera Mini/i.test(nAgt);jQuery.browser.windowsMobile=/IEMobile|Windows Phone/i.test(nAgt);jQuery.browser.kindle=/Kindle|Silk/i.test(nAgt);jQuery.browser.mobile=jQuery.browser.android||jQuery.browser.blackberry||jQuery.browser.ios||jQuery.browser.windowsMobile||jQuery.browser.operaMobile||jQuery.browser.kindle;
 jQuery.isMobile=jQuery.browser.mobile;jQuery.isTablet=jQuery.browser.mobile&&765<jQuery(window).width();jQuery.isAndroidDefault=jQuery.browser.android&&!/chrome/i.test(nAgt);
-;/*___________________________________________________________________________________________________________________________________________________
+/*___________________________________________________________________________________________________________________________________________________
  _ jquery.mb.components                                                                                                                             _
  _                                                                                                                                                  _
  _ file: jquery.mb.simpleSlider.min.js                                                                                                              _

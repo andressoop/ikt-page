@@ -1,5 +1,5 @@
                   
-        <section class="cid-qLAZXJYIHL" id="footer2-h">
+        <section class="footer">
 
             <div class="container">
                 <div class="media-container-row content mbr-white">
@@ -24,12 +24,12 @@
                             <div class="social-list">
                                 <div class="soc-item">
                                     <a href="https://facebook.com/kutseharidus" target="_blank">
-                                        <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                                        <span class="mbr-iconfont mbr-iconfont-social socicon-facebook"></span>
                                     </a>
                                 </div>
                                 <div class="soc-item">
                                     <a href="https://www.youtube.com/user/kutseharidus" target="_blank">
-                                        <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                                        <span class="mbr-iconfont mbr-iconfont-social socicon-youtube"></span>
                                     </a>
                                 </div>
                             </div>
@@ -46,16 +46,55 @@
                         </div>
                     </div>
                     <div class="media-container-row mbr-white">
-                        <div class="col-sm-6 copyright">
+                        <div class="col-sm-12 copyright">
                             <p class="mbr-text mbr-fonts-style display-7">
-                                © Copyright 2018 Sandra ja Andres - All Rights Reserved
+                                Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/" target="_blank">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/" target="_blank">Andres Soop</a>.
                             </p>
-                        </div>
-                        <div class="col-md-6">
                         </div>
                     </div>
                 </div>
             </div>
+
+<!--            Floating contact form -->
+<!--            <button class="btn-primary float-button"><span class="mbri-letter float-button-inner"></span></button>-->
+
+            <div id="contact-form" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-md">
+
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h4 class="modal-title">Kirjuta meile</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form  method="post" action="contact.php" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-field" name="name" placeholder="Ees- ja perekonnanimi"  required>
+                                    <div class="invalid-feedback">
+                                        Palun sisestage oma nimi.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-field" name="email" placeholder="Sinu e-posti aadress"  required>
+                                    <div class="invalid-feedback">
+                                        Palun sisestaga korrektne e-posti aadress, et saaksime teile vastata.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control form-field" name="message" placeholder="Kirja sisu" row="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Palun lisage kirjale ka sisu.
+                                    </div>
+                                </div>
+                                <div class="form-group mbr-section-btn text-center">
+                                    <button type="submit" class="btn btn-secondary display-4">Saada</button>
+                                </div>
+                                <div class="messages"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
