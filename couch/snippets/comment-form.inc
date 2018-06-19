@@ -44,7 +44,7 @@
                     <p class="comment-input">
                         <cms:input type="text" name="k_email" size="22" tabindex="2" validator="email" required="1"/>
                         <label for="email">
-                            <small>Email * (Ei avalikustata)</small>
+                            <small>Email * (Ei avalikustata, gmaili olemasolul kuvatakse sinu pilt)</small>
                         </label>
                     </p>
                     <cms:else/>
