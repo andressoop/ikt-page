@@ -16,7 +16,7 @@ include('header.php'); ?>
                         </cms:editable>
                     </h1>
                     <div class="mbr-section-btn">
-                        <a class="btn btn-md btn-secondary display-4" href="page1.php">TULE ÕPPIMA</a>
+                        <a class="btn btn-md btn-secondary display-4" href="erialad.php">TULE ÕPPIMA</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ include('header.php'); ?>
 
         <div class="container">
             <div class="media-container-row">
-                <cms:pages masterpage='blog_post.php' paginate='1' limit='3'>
+                <cms:pages masterpage='uudised.php' paginate='1' limit='3'>
                     <div class="card p-3 col-12 col-md-6 col-lg-4">
                         <div class="card-wrapper">
                             <div class="card-img">

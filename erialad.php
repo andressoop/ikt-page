@@ -24,7 +24,7 @@ include('header.php'); ?>
 
         <div class="container">
             <div class="media-container-row">
-                <cms:pages masterpage='eriala_post.php'>
+                <cms:pages masterpage='eriala.php'>
                     <div class="card p-3 col-12 col-md-6 col-lg-4">
                         <div class="card-wrapper">
                             <div class="card-img">

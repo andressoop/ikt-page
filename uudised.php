@@ -71,7 +71,7 @@ include('header.php'); ?>
 
 </section>
 <cms:else />
-    <cms:embed 'page2.php' />
+    <cms:embed 'postitused.php' />
 </cms:if>
 <?php COUCH::invoke();
  include('footer.php'); ?>

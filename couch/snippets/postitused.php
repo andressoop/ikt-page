@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12">
                 <!--   Postitused  -->
-                <cms:pages masterpage='blog_post.php'
+                <cms:pages masterpage='uudised.php'
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
@@ -113,7 +113,7 @@
                             <div class="mbr-text counter-container mbr-fonts-style display-7">
                                 <div class="sidebar-title">Postituste arhiiv</div>
                                 <ul>
-                                    <cms:archives masterpage='blog_post.php'>
+                                    <cms:archives masterpage='uudised.php'>
                                         <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
                                     </cms:archives>
                                 </ul>
