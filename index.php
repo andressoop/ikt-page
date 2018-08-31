@@ -11,7 +11,7 @@ include('header.php'); ?>
             <div class="row justify-content-md-center">
                 <div class="mbr-white col-md-10 title-area">
                     <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
-                        <cms:editable name='main_title' type='richtext'>
+                        <cms:editable name='main_title' label="Lehe pealkiri" type='richtext'>
                             INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND
                         </cms:editable>
                     </h1>

@@ -2,7 +2,7 @@
 include('header.php'); ?>
     <cms:template title='Praktika' />
 
-    <cms:editable name='main_content' type='richtext'>
+    <cms:editable name='main_content' label="Praktikapakkumised" type='richtext'>
     <section class="mbr-section content4 cid-qLBdf21SG5" id="content4-19">
 
 

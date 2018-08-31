@@ -1,8 +1,8 @@
 <?php require_once( 'couch/cms.php' );
 include('header.php'); ?>
     <cms:template title='Uudised' clonable='1' commentable='1'>
-           <cms:editable name='blog_content' type='richtext' />
-           <cms:editable name='blog_image'
+           <cms:editable name='blog_content' label="Uudise sisu" type='richtext' />
+           <cms:editable name='blog_image' label="Pilt"
                crop='1'
                width='640'
                height='400'

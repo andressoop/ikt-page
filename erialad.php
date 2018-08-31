@@ -7,7 +7,7 @@ include('header.php'); ?>
             <div class="inner-container" style="width: 100%;">
                 <hr class="line" style="width: 25%;">
                 <div class="section-text align-center mbr-fonts-style display-5">
-                    <cms:editable name='eriala_intro' type='richtext'>
+                    <cms:editable name='eriala_intro' label="Eriala intro" type='richtext'>
                         Osakonnas õpetavad erialaaineid mitmed kogemustega erialaspetsialistid, õppetöö raames teostavad
                         õpilased erinevaid erialaprojekte. Muutused IKT valdkonnas on kiired ja eeldavad pidevat
                         enesetäiendamist. Osakonna tugevuseks on avatus uutele ideedele ja koostöövõrgustik erinevate
@@ -53,7 +53,7 @@ include('header.php'); ?>
             <div class="media-container-row">
                 <div class="col-lg-12">
                     <div class="section-text mbr-fonts-style display-7">
-                        <cms:editable name='eriala_tutvustus' type='richtext'>
+                        <cms:editable name='eriala_tutvustus' label="Eriala tutvustus" type='richtext'>
 
                         </cms:editable>
                     </div>

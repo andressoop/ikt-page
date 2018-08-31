@@ -2,7 +2,7 @@
 include('header.php'); ?>
     <cms:template title='Õppetöö' />
 
-    <cms:editable name='main_studies' type='richtext'>
+    <cms:editable name='main_studies' label="Õppematerjalid" type='richtext'>
     <section class="mbr-section content4 cid-qLBfffq1Ei" id="content4-1h">
 
         <div class="container">
@@ -33,7 +33,7 @@ include('header.php'); ?>
     </section>
     </cms:editable>
 
-    <cms:editable name='main_konsultatsioon' type='richtext'>
+    <cms:editable name='main_konsultatsioon' label="Konsultatsiooniajad" type='richtext'>
     <section class="mbr-section article content12 cid-qLBffhcnrA" id="content12-1j">
 
            <div class="container">
