@@ -38,5 +38,5 @@ include('header.php'); ?>
         </section>
     </cms:if>
 
-<?php COUCH::invoke();
-include('footer.php'); ?>
+    <cms:embed "footer.php" />
+<?php COUCH::invoke(); ?>

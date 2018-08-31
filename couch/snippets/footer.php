@@ -5,20 +5,12 @@
                 <div class="media-container-row content mbr-white">
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                            <strong>Aadress</strong>
-                            <br>
-                            <br>Tartu Kutsehariduskeskus
-                            <br>Kopli 1, 50115 Tartu<br>
-                            <br>
-                            <br><strong>Kontakt</strong><br>
-                            <br>E-post: info@khk.ee
-                            <br>Telefon: 7 361 866<br>
+                            <cms:get_custom_field 'address' masterpage='globals.php' />
                         </p>
                     </div>
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                            <strong>Lingid</strong>&nbsp;<br>
-                            <br><a class="text-primary" href="http://khk.ee" target="_blank">Tartu Kutsehariduskeskus</a><br><a class="text-primary" href="https://moodle.hitsa.ee" target="_blank">Moodle</a>&nbsp;<br><a class="text-primary" href="https://tkhk.siseveeb.ee/veebivormid/tunniplaan" target="_blank">Tunniplaan</a>&nbsp;<br><br>
+                            <cms:get_custom_field 'links' masterpage='globals.php' />
                         </p>
                         <div class="footer-lower">
                             <div class="social-list">
@@ -66,7 +58,7 @@
                             <h4 class="modal-title">Kirjuta meile</h4>
                         </div>
                         <div class="modal-body">
-                            <form  method="post" action="contact.php" class="needs-validation" novalidate>
+                            <form method="post" action="../../contact.php" class="needs-validation" novalidate>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-field" name="name" placeholder="Ees- ja perekonnanimi"  required>
                                     <div class="invalid-feedback">
@@ -98,16 +90,16 @@
         </section>
 
 
-        <script src="assets/web/assets/jquery/jquery.min.js"></script>
-        <script src="assets/popper/popper.min.js"></script>
-        <script src="assets/tether/tether.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/smoothscroll/smooth-scroll.js"></script>
-        <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-        <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
-        <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-        <script src="assets/dropdown/js/script.min.js"></script>
-        <script src="assets/theme/js/script.js"></script>
+        <script src="../../assets/web/assets/jquery/jquery.min.js"></script>
+        <script src="../../assets/popper/popper.min.js"></script>
+        <script src="../../assets/tether/tether.min.js"></script>
+        <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../assets/smoothscroll/smooth-scroll.js"></script>
+        <script src="../../assets/touchswipe/jquery.touch-swipe.min.js"></script>
+        <script src="../../assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+        <script src="../../assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+        <script src="../../assets/dropdown/js/script.min.js"></script>
+        <script src="../../assets/theme/js/script.js"></script>
 
 
     </body>

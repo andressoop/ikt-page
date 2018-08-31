@@ -61,6 +61,5 @@ include('header.php'); ?>
 
     </section>
 
-
-<?php COUCH::invoke();
-include('footer.php'); ?>
+    <cms:embed "footer.php" />
+<?php COUCH::invoke(); ?>
