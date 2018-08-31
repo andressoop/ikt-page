@@ -1,5 +1,6 @@
-<?php require_once( 'couch/cms.php' );
-include('header.php'); ?>
+<?php require_once( 'couch/cms.php' ); ?>
+    <cms:embed "header.php" />
+
     <cms:template title='Uudised' clonable='1' commentable='1'>
            <cms:editable name='blog_content' label="Uudise sisu" type='richtext' />
            <cms:editable name='blog_image' label="Pilt"

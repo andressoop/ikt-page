@@ -1,5 +1,6 @@
-<?php require_once( 'couch/cms.php' ); 
-include('header.php'); ?>
+<?php require_once( 'couch/cms.php' ); ?>
+    <cms:embed "header.php" />
+
     <cms:template title='Õppetöö' />
 
     <cms:editable name='main_studies' label="Õppematerjalid" type='richtext'>
