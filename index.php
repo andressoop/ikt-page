@@ -1,5 +1,6 @@
-<?php require_once('couch/cms.php');
-include('header.php'); ?>
+<?php require_once('couch/cms.php'); ?>
+    <cms:embed "header.php" />
+
     <cms:template title='Avaleht'/>
 
 
@@ -11,12 +12,12 @@ include('header.php'); ?>
             <div class="row justify-content-md-center">
                 <div class="mbr-white col-md-10 title-area">
                     <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
-                        <cms:editable name='main_title' type='richtext'>
+                        <cms:editable name='main_title' label="Lehe pealkiri" type='richtext'>
                             INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND
                         </cms:editable>
                     </h1>
                     <div class="mbr-section-btn">
-                        <a class="btn btn-md btn-secondary display-4" href="page1.php">TULE ÕPPIMA</a>
+                        <a class="btn btn-md btn-secondary display-4" href="erialad.php">TULE ÕPPIMA</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +35,7 @@ include('header.php'); ?>
 
         <div class="container">
             <div class="media-container-row">
-                <cms:pages masterpage='blog_post.php' paginate='1' limit='3'>
+                <cms:pages masterpage='uudised.php' paginate='1' limit='3'>
                     <div class="card p-3 col-12 col-md-6 col-lg-4">
                         <div class="card-wrapper">
                             <div class="card-img">
@@ -61,6 +62,5 @@ include('header.php'); ?>
 
     </section>
 
-
-<?php COUCH::invoke();
-include('footer.php'); ?>
+    <cms:embed "footer.php" />
+<?php COUCH::invoke(); ?>

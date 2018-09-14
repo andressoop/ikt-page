@@ -1,79 +1,80 @@
-<?php require_once( 'couch/cms.php' );
-include('header.php'); ?>
-<cms:template title='Kalender' clonable='1'>
-    <cms:editable name='desc' label='Description' type='textarea' />
-    <cms:editable name='location' label='Location' type='text' />
+<?php require_once( 'couch/cms.php' ); ?>
+    <cms:embed "header.php" />
 
-    <cms:editable name="start_time" label="Time From (24 Hrs)"
-      opt_values=' Unspecified |
-                  00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
-                  04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
-                  08:00 | 08:30 | 09:00 | 09:30 | 10:00 | 10:30 | 11:00 | 11:30 |
-                  12:00 | 12:30 | 13:00 | 13:30 | 14:00 | 14:30 | 15:00 | 15:30 |
-                  16:00 | 16:30 | 17:00 | 17:30 | 18:00 | 18:30 | 19:00 | 19:30 |
-                  20:00 | 20:30 | 21:00 | 21:30 | 22:00 | 22:30 | 23:00 | 23:30 |'
-      type='dropdown'
-    />
+    <cms:template title='Kalender' clonable='1'>
+        <cms:editable name='desc' label='Description' type='textarea' />
+        <cms:editable name='location' label='Location' type='text' />
 
-    <cms:editable name="end_time" label="Time Until (24 Hrs)"
-      opt_values=' Unspecified |
-                  00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
-                  04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
-                  08:00 | 08:30 | 09:00 | 09:30 | 10:00 | 10:30 | 11:00 | 11:30 |
-                  12:00 | 12:30 | 13:00 | 13:30 | 14:00 | 14:30 | 15:00 | 15:30 |
-                  16:00 | 16:30 | 17:00 | 17:30 | 18:00 | 18:30 | 19:00 | 19:30 |
-                  20:00 | 20:30 | 21:00 | 21:30 | 22:00 | 22:30 | 23:00 | 23:30 |'
-      type='dropdown'
-    />
+        <cms:editable name="start_time" label="Time From (24 Hrs)"
+          opt_values=' Unspecified |
+                      00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
+                      04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
+                      08:00 | 08:30 | 09:00 | 09:30 | 10:00 | 10:30 | 11:00 | 11:30 |
+                      12:00 | 12:30 | 13:00 | 13:30 | 14:00 | 14:30 | 15:00 | 15:30 |
+                      16:00 | 16:30 | 17:00 | 17:30 | 18:00 | 18:30 | 19:00 | 19:30 |
+                      20:00 | 20:30 | 21:00 | 21:30 | 22:00 | 22:30 | 23:00 | 23:30 |'
+          type='dropdown'
+        />
 
-    <cms:editable name='end_date'
-        label='Event End Date (if multi-days event)'
-        desc='Enter date in yyyy-mm-dd format e.g. 2010-12-31'
-        type='text'
-        validator='regex=/(?:19|20)\d\d-(?:0[1-9]|1[012])-(?:0[1-9]|[12][0-9]|3[01])/'
-        separator='#'
-        validator_msg='regex=Incorrect date format'
-    />
-    
-    <cms:editable name='image'
-        label='Image'
-        type='image'
-    />
+        <cms:editable name="end_time" label="Time Until (24 Hrs)"
+          opt_values=' Unspecified |
+                      00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
+                      04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
+                      08:00 | 08:30 | 09:00 | 09:30 | 10:00 | 10:30 | 11:00 | 11:30 |
+                      12:00 | 12:30 | 13:00 | 13:30 | 14:00 | 14:30 | 15:00 | 15:30 |
+                      16:00 | 16:30 | 17:00 | 17:30 | 18:00 | 18:30 | 19:00 | 19:30 |
+                      20:00 | 20:30 | 21:00 | 21:30 | 22:00 | 22:30 | 23:00 | 23:30 |'
+          type='dropdown'
+        />
 
-</cms:template>
+        <cms:editable name='end_date'
+            label='Event End Date (if multi-days event)'
+            desc='Enter date in yyyy-mm-dd format e.g. 2010-12-31'
+            type='text'
+            validator='regex=/(?:19|20)\d\d-(?:0[1-9]|1[012])-(?:0[1-9]|[12][0-9]|3[01])/'
+            separator='#'
+            validator_msg='regex=Incorrect date format'
+        />
 
-<!-- Event's information-->
-<section class="mbr-section content4 eriala-head" id="content4-16">
+        <cms:editable name='image'
+            label='Image'
+            type='image'
+        />
 
-    <div class="container">
-        <div class="media-container-row align-center">
-            <div class="title col-12 col-md-8">
-                <cms:if k_is_page >
-                    <!-- Page View -->
-                    <img class="thumb" src="<cms:show image />" alt=""/>
-                    <h2><cms:show k_page_title /></h2><br>
-                    <b>Kirjeldus:</b> <cms:show desc /><br>
-                    <b>Asukoht:</b> <cms:show location /><br>
-                    <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
-                    <cms:if start_time!='Unspecified' >
-                        <b>Algusaeg:</b> <cms:show start_time /><br>
+    </cms:template>
+
+    <!-- Event's information-->
+    <section class="mbr-section content4 eriala-head" id="content4-16">
+
+        <div class="container">
+            <div class="media-container-row align-center">
+                <div class="title col-12 col-md-8">
+                    <cms:if k_is_page >
+                        <!-- Page View -->
+                        <img class="thumb" src="<cms:show image />" alt=""/>
+                        <h2><cms:show k_page_title /></h2><br>
+                        <b>Kirjeldus:</b> <cms:show desc /><br>
+                        <b>Asukoht:</b> <cms:show location /><br>
+                        <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
+                        <cms:if start_time!='Unspecified' >
+                            <b>Algusaeg:</b> <cms:show start_time /><br>
+                        </cms:if>
+                        <cms:if "<cms:not_empty end_date />" >
+                            <b>Kuni:</b> <cms:date end_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
+                        </cms:if>
+                        <cms:if end_time!='Unspecified' >
+                            <b>Lõpuaeg:</b> <cms:show end_time /><br>
+                        </cms:if>
+
+                    <cms:else />
+
                     </cms:if>
-                    <cms:if "<cms:not_empty end_date />" >
-                        <b>Kuni:</b> <cms:date end_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
-                    </cms:if>
-                    <cms:if end_time!='Unspecified' >
-                        <b>Lõpuaeg:</b> <cms:show end_time /><br>
-                    </cms:if>
-
-                <cms:else />
-                    
-                </cms:if>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
    
-<section class="mbr-section content4 eriala-head" id="content4-16">
+    <section class="mbr-section content4 eriala-head" id="content4-16">
         <div class="container">
             <div class="media-container-row">
             <cms:calendar date="<cms:gpc 'cal' />" masterpage='events.php' week_starts='1' show_future_entries='1'>
@@ -125,5 +126,5 @@ include('header.php'); ?>
         </div>
     </section>
 
-<?php COUCH::invoke();
-include('footer.php'); ?>
+    <cms:embed "footer.php" />
+<?php COUCH::invoke(); ?>
