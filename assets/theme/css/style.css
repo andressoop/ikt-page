@@ -1794,6 +1794,9 @@ body {
   background: #ffffff;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .features .card-wrapper:hover {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);

@@ -38,18 +38,20 @@
                 <cms:pages masterpage='uudised.php' paginate='1' limit='3'>
                     <div class="card p-3 col-12 col-md-6 col-lg-4">
                         <div class="card-wrapper">
-                            <div class="card-img">
-                                <img src="<cms:show blog_image />" alt="">
-                            </div>
-                            <div class="card-box">
-                                <h4 class="card-title mbr-fonts-style display-7">
-                                    <cms:show k_page_title/>
-                                </h4>
-                                <p class="mbr-text mbr-fonts-style display-7">
-                                    <cms:excerpt count='15' ignore='img'>
-                                        <cms:show blog_content/>
-                                    </cms:excerpt>
-                                </p>
+                            <div>
+                                <div class="card-img">
+                                    <img src="<cms:show blog_image />" alt="">
+                                </div>
+                                <div class="card-box">
+                                    <h4 class="card-title mbr-fonts-style display-7">
+                                        <cms:show k_page_title/>
+                                    </h4>
+                                    <p class="mbr-text mbr-fonts-style display-7">
+                                        <cms:excerpt count='15' ignore='img'>
+                                            <cms:show blog_content/>
+                                        </cms:excerpt>
+                                    </p>
+                                </div>
                             </div>
                             <div class="mbr-section-btn text-center">
                                 <a href="<cms:show k_page_link />" class="btn btn-secondary display-4">Loe lähemalt<br></a>
