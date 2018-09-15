@@ -4,7 +4,7 @@
     <cms:template title='Õppetöö' />
 
     <cms:editable name='main_studies' label="Õppematerjalid" type='richtext'>
-    <section class="mbr-section content4 cid-qLBfffq1Ei" id="content4-1h">
+    <section class="cid-qLBfffq1Ei">
 
         <div class="container">
             <div class="media-container-row">
@@ -15,9 +15,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="mbr-section article content12 eriala-content" id="content12-1i">
 
         <div class="container">
             <div class="media-container-row">
@@ -35,7 +32,7 @@
     </cms:editable>
 
     <cms:editable name='main_konsultatsioon' label="Konsultatsiooniajad" type='richtext'>
-    <section class="mbr-section article content12 cid-qLBffhcnrA" id="content12-1j">
+    <section class="cid-qLBffhcnrA">
 
            <div class="container">
             <div class="media-container-row">
