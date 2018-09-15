@@ -4,7 +4,7 @@
     <cms:template title='Praktika' />
 
     <cms:editable name='main_content' label="Praktikapakkumised" type='richtext'>
-    <section class="mbr-section content4 cid-qLBdf21SG5" id="content4-19">
+    <section class="mbr-section content4 cid-qLBdf21SG5">
 
 
 
@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <section class="mbr-section article content12 cid-qLBdC3oald" id="content12-1e">
+    <section class="mbr-section article content12 cid-qLBdC3oald">
 
 
         <div class="container">
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section class="mbr-section article content12 cid-qLBeYTfcvq" id="content12-1f">
+    <section class="mbr-section article content12 cid-qLBeYTfcvq">
 
 
         <div class="container">
