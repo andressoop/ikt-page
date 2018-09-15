@@ -2999,7 +2999,7 @@ nav .mbr-section-btn {
 }
 
 .modal-open[style] {
-    padding-right: 0px !important;
+    padding-right: 0 !important;
 }
 
 button.btn {
