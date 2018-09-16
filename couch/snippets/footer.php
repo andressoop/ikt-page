@@ -48,7 +48,7 @@
             </div>
 
 <!--            Floating contact form -->
-<!--            <button class="btn-primary float-button"><span class="mbri-letter float-button-inner"></span></button>-->
+            <button class="btn-primary float-button"><span class="mbri-letter float-button-inner"></span></button>
 
             <div id="contact-form" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-md">

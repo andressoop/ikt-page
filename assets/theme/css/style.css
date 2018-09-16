@@ -2984,6 +2984,7 @@ nav .mbr-section-btn {
 .float-button:hover, .float-button:focus {
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
     -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
+    outline: none;
 }
 
 .float-button-inner{
