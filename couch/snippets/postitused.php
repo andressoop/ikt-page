@@ -91,7 +91,7 @@
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
                                                 <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:link masterpage='kalender.php' year=k_year month=k_month day=k_day />"><cms:show k_day /></a>
+                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day />"><cms:show k_day /></a>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>
