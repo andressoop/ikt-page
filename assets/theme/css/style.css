@@ -3104,6 +3104,10 @@ table.calendar_small td.today a
   color: #FFFFFF;
 }
 
+.calendar-link {
+  font-size: 0.9rem;
+  margin-left: auto;
+}
 /**************************/
 table.calendar_big{
   width: 833px;
