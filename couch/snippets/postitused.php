@@ -66,7 +66,7 @@
 
                 <!--  Kalender  -->
                 <div class="media-container-row">
-                    <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='events.php' show_future_entries='1'>
+                    <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='kalender.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
                                 <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
@@ -91,7 +91,7 @@
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
                                                 <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:link masterpage='events.php' year=k_year month=k_month day=k_day />"><cms:show k_day /></a>
+                                                    <a href="<cms:link masterpage='kalender.php' year=k_year month=k_month day=k_day />"><cms:show k_day /></a>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>
