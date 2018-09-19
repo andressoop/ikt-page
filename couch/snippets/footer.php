@@ -15,12 +15,12 @@
                         <div class="footer-lower">
                             <div class="social-list">
                                 <div class="soc-item">
-                                    <a href="https://facebook.com/kutseharidus" target="_blank">
+                                    <a href="<cms:get_custom_field 'facebook_id' masterpage='globals.php' />" target="_blank">
                                         <span class="mbr-iconfont mbr-iconfont-social socicon-facebook"></span>
                                     </a>
                                 </div>
                                 <div class="soc-item">
-                                    <a href="https://www.youtube.com/user/kutseharidus" target="_blank">
+                                    <a href="<cms:get_custom_field 'youtube_id' masterpage='globals.php' />" target="_blank">
                                         <span class="mbr-iconfont mbr-iconfont-social socicon-youtube"></span>
                                     </a>
                                 </div>
