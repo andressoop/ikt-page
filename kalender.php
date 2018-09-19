@@ -77,7 +77,7 @@
     <section class="mbr-section content4 eriala-head" id="content4-16">
         <div class="container">
             <div class="media-container-row">
-            <cms:calendar date="<cms:gpc 'cal' />" masterpage='events.php' week_starts='1' show_future_entries='1'>
+            <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
                     <table class="calendar_big">
                         <tr>
                             <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
