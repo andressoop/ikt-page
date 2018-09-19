@@ -66,7 +66,7 @@
 
                 <!--  Kalender  -->
                 <div class="media-container-row">
-                    <!--<cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='events.php' show_future_entries='1'>
+                    <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='events.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
                                 <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
@@ -104,7 +104,7 @@
                             </cms:weeks>
                         </table>
                     </cms:calendar>
-                </div>-->
+                </div>
 
                 <!--  Postituste arhiiv  -->
                 <div class="container">
