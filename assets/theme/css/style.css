@@ -491,14 +491,6 @@ body {
 .text-black {
   color: #000000 !important;
 }
-a.text-primary:hover,
-a.text-primary:focus {
-  color: #005172 !important;
-}
-a.text-secondary:hover,
-a.text-secondary:focus {
-  color: #005172 !important;
-}
 a.text-success:hover,
 a.text-success:focus {
   color: #d2c609 !important;
@@ -567,9 +559,11 @@ a.text-black:focus {
 .btn-form:hover {
   cursor: pointer;
 }
-a,
-a:hover {
+a {
   color: #0099d8;
+}
+a:hover {
+  color: #0054a6;
 }
 .mbr-plan-header.bg-primary .mbr-plan-subtitle,
 .mbr-plan-header.bg-primary .mbr-plan-price-desc {
@@ -3086,22 +3080,28 @@ table.calendar_small td.other_month{
 }
 
 table.calendar_small td.entries{
-  background-color: #FFFFE0;
+  background-color: #0099d8;
 }
 
 table.calendar_small td.entries a{
   display: block;
   font-weight:bold;
   color: #555555;
-  background-color: #FFFFE0;
+  background-color: #0099d8;
   text-decoration: none;
 }
 
 table.calendar_small td.today,
 table.calendar_small td.today a
 {
-  background-color: #555555;
+  background-color: #0054a6;
   color: #FFFFFF;
+}
+
+table.calendar_small td.entries.today,
+table.calendar_small td.entries.today a{
+  color: #FFFFFF;
+  background-color: #0099d8;
 }
 
 .calendar-link {
