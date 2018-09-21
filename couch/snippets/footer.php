@@ -14,16 +14,39 @@
                         </p>
                         <div class="footer-lower">
                             <div class="social-list">
-                                <div class="soc-item">
-                                    <a href="<cms:get_custom_field 'facebook_id' masterpage='globals.php' />" target="_blank">
-                                        <span class="mbr-iconfont mbr-iconfont-social socicon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="soc-item">
-                                    <a href="<cms:get_custom_field 'youtube_id' masterpage='globals.php' />" target="_blank">
-                                        <span class="mbr-iconfont mbr-iconfont-social socicon-youtube"></span>
-                                    </a>
-                                </div>
+                                <cms:set facebook_id="<cms:get_custom_field 'facebook_id' masterpage='globals.php' />" />
+                                <cms:set youtube_id="<cms:get_custom_field 'youtube_id' masterpage='globals.php' />" />
+                                <cms:set twitter_id="<cms:get_custom_field 'twitter_id' masterpage='globals.php' />" />
+                                <cms:set instagram_id="<cms:get_custom_field 'instagram_id' masterpage='globals.php' />" />
+
+                                <cms:if facebook_id>
+                                    <div class="soc-item">
+                                        <a href="<cms:show facebook_id />" target="_blank">
+                                            <span class="mbr-iconfont mbr-iconfont-social socicon-facebook"></span>
+                                        </a>
+                                    </div>
+                                </cms:if>
+                                <cms:if facebook_id>
+                                    <div class="soc-item">
+                                        <a href="<cms:show youtube_id />" target="_blank">
+                                            <span class="mbr-iconfont mbr-iconfont-social socicon-youtube"></span>
+                                        </a>
+                                    </div>
+                                </cms:if>
+                                <cms:if twitter_id>
+                                    <div class="soc-item">
+                                        <a href="<cms:show twitter_id />" target="_blank">
+                                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter"></span>
+                                        </a>
+                                    </div>
+                                </cms:if>
+                                <cms:if instagram_id>
+                                    <div class="soc-item">
+                                        <a href="<cms:show instagram_id />" target="_blank">
+                                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram"></span>
+                                        </a>
+                                    </div>
+                                </cms:if>
                             </div>
                         </div>
                     </div>
