@@ -990,3 +990,9 @@ $(document).ready(function() {
         });
     });
 });
+
+
+// Calendar
+$(document).ready(function() {
+    $("#calendar-event").modal('show');
+});

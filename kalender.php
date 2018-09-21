@@ -44,15 +44,16 @@
     </cms:template>
 
     <!-- Event's information-->
-    <section class="mbr-section content4 eriala-head" id="content4-16">
-
-        <div class="container">
-            <div class="media-container-row align-center">
-                <div class="title col-12 col-md-8">
-                    <cms:if k_is_page >
-                        <!-- Page View -->
+    <cms:if k_is_page >
+        <div id="calendar-event" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h4 class="modal-title"><cms:show k_page_title /></h4>
+                        <a href="#" class="close-event" data-dismiss="modal"></a>
+                    </div>
+                    <div class="modal-body">
                         <img class="thumb" src="<cms:show image />" alt=""/>
-                        <h2><cms:show k_page_title /></h2><br>
                         <b>Kirjeldus:</b> <cms:show desc /><br>
                         <b>Asukoht:</b> <cms:show location /><br>
                         <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
@@ -65,14 +66,12 @@
                         <cms:if end_time!='Unspecified' >
                             <b>Lõpuaeg:</b> <cms:show end_time /><br>
                         </cms:if>
-
-                    <cms:else />
-
-                    </cms:if>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </cms:if>
+
    
     <section class="mbr-section content4 eriala-head" id="content4-16">
         <div class="container">
@@ -106,7 +105,7 @@
                                             <ul>
                                             <cms:entries limit='2' skip_custom_fields='1'>
                                                 <li>
-                                                    <a href="<cms:show k_page_link />"><cms:show k_page_title /></a>
+                                                    <a href="<cms:show k_page_link />" class="calendar-link"><cms:show k_page_title /></a>
                                                 </li>
                                             </cms:entries>
                                             </ul>

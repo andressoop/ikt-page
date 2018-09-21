@@ -3179,3 +3179,28 @@ table.calendar_big td ul{
 table.calendar_big td li{
   margin-bottom: 1px;
 }
+
+.close-event {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.close-event:before, .close-event:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 1.5rem;
+  width: 2px;
+  background-color: white;
+}
+.close-event:hover:before, .close-event:hover:after {
+  background-color: #ffe600;
+}
+.close-event:before {
+  transform: rotate(45deg);
+}
+.close-event:after {
+  transform: rotate(-45deg);
+}
