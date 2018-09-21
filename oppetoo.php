@@ -3,7 +3,7 @@
 
     <cms:template title='Õppetöö' />
 
-    <section class="mbr-section content4 cid-qLBfffq1Ei">
+    <section class="oppetoo-title">
         <div class="container">
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
@@ -15,7 +15,7 @@
         </div>
     </section>
 
-    <section class="mbr-section article content12 eriala-content">
+    <section class="eriala-content">
         <div class="container">
             <div class="media-container-row">
                 <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="mbr-section article content12 cid-qLBffhcnrA">
+    <section class="oppetoo-second-title">
            <div class="container">
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
@@ -37,7 +37,9 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section class="eriala-content">
         <div class="container">
             <div class="media-container-row">
                 <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
