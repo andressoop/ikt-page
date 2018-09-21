@@ -3,24 +3,6 @@
 
     <cms:template title='Erialad'/>
 
-    <section class="erialad_head">
-        <div class="container">
-            <div class="inner-container" style="width: 100%;">
-                <hr class="line" style="width: 25%;">
-                <div class="section-text align-center mbr-fonts-style display-5">
-                    <cms:editable name='eriala_intro' label="Eriala intro" type='richtext'>
-                        Osakonnas õpetavad erialaaineid mitmed kogemustega erialaspetsialistid, õppetöö raames teostavad
-                        õpilased erinevaid erialaprojekte. Muutused IKT valdkonnas on kiired ja eeldavad pidevat
-                        enesetäiendamist. Osakonna tugevuseks on avatus uutele ideedele ja koostöövõrgustik erinevate
-                        Eesti ja Euroopa koolidega.
-                    </cms:editable>
-                </div>
-                <hr class="line" style="width: 25%;">
-            </div>
-        </div>
-    </section>
-
-
     <section class="erialad-list">
 
         <div class="container">
@@ -49,12 +31,29 @@
         </div>
     </section>
 
-    <section class="erialad-list">
+    <section class="erialad-section">
+        <div class="container">
+            <div class="inner-container" style="width: 100%;">
+                <hr class="line" style="width: 25%;">
+                <div class="section-text align-center mbr-fonts-style display-5">
+                    <cms:editable name='eriala_intro' label="Eriala intro" type='richtext'>
+                        Osakonnas õpetavad erialaaineid mitmed kogemustega erialaspetsialistid, õppetöö raames teostavad
+                        õpilased erinevaid erialaprojekte. Muutused IKT valdkonnas on kiired ja eeldavad pidevat
+                        enesetäiendamist. Osakonna tugevuseks on avatus uutele ideedele ja koostöövõrgustik erinevate
+                        Eesti ja Euroopa koolidega.
+                    </cms:editable>
+                </div>
+                <hr class="line" style="width: 25%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="erialad-section">
         <div class="container">
             <div class="media-container-row">
                 <div class="col-lg-12">
                     <div class="section-text mbr-fonts-style display-7">
-                        <cms:editable name='eriala_tutvustus' label="Eriala tutvustus" type='richtext'>
+                        <cms:editable name='osakonna_tutvustus' label="Osakonna tutvustus" type='richtext'>
 
                         </cms:editable>
                     </div>
