@@ -2,7 +2,7 @@
     <cms:embed "header.php" />
 
     <cms:template title='Kalender' clonable='1'>
-        <cms:editable name='desc' label='Description' type='textarea' />
+        <cms:editable name='desc' label='Description' type='richtext' />
         <cms:editable name='location' label='Location' type='text' />
 
         <cms:editable name="start_time" label="Time From (24 Hrs)"
@@ -54,18 +54,18 @@
                     </div>
                     <div class="modal-body">
                         <img class="thumb" src="<cms:show image />" alt=""/>
-                        <b>Kirjeldus:</b> <cms:show desc /><br>
                         <b>Asukoht:</b> <cms:show location /><br>
-                        <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
+                        <b>Kuupäev:</b> <cms:date k_page_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" />
+                        <cms:if "<cms:not_empty end_date />" >
+                            <b>-</b> <cms:date end_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" />
+                        </cms:if><br>
                         <cms:if start_time!='Unspecified' >
                             <b>Algusaeg:</b> <cms:show start_time /><br>
-                        </cms:if>
-                        <cms:if "<cms:not_empty end_date />" >
-                            <b>Kuni:</b> <cms:date end_date format='%e. %B %Y' locale="estonian" charset="ISO-8859-4" /><br>
                         </cms:if>
                         <cms:if end_time!='Unspecified' >
                             <b>Lõpuaeg:</b> <cms:show end_time /><br>
                         </cms:if>
+                        <b>Kirjeldus:</b> <cms:show desc /><br>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                                         <td class='entries <cms:show tdclass />' align='center'>
                                             <a href="#"><cms:show k_day /></a>
                                             <ul>
-                                            <cms:entries limit='2' skip_custom_fields='1'>
+                                            <cms:entries limit='5' skip_custom_fields='1'>
                                                 <li>
                                                     <a href="<cms:show k_page_link />" class="calendar-link"><cms:show k_page_title /></a>
                                                 </li>
