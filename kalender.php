@@ -73,7 +73,7 @@
     </cms:if>
 
    
-    <section class="mbr-section content4 eriala-head" id="content4-16">
+    <section class="eriala-head">
         <div class="container">
             <div class="media-container-row">
             <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
