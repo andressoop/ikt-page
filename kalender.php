@@ -76,6 +76,7 @@
     <section class="eriala-head">
         <div class="container">
             <div class="media-container-row">
+
             <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
                     <table class="calendar_big">
                         <tr>
@@ -101,7 +102,7 @@
                                 <cms:if k_position='current_month' >
                                     <cms:if k_count_entries >
                                         <td class='entries <cms:show tdclass />' align='center'>
-                                            <a href="#"><cms:show k_day /></a>
+                                            <cms:show k_day />
                                             <ul>
                                             <cms:entries limit='5' skip_custom_fields='1'>
                                                 <li>
@@ -121,6 +122,7 @@
                         </cms:weeks>
                     </table>
                 </cms:calendar>
+
             </div>
         </div>
     </section>
