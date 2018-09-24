@@ -16,6 +16,9 @@ body {
   font-style: normal;
   line-height: 1.6;
 }
+.erialad-section-text {
+  color: #767676;
+}
 .display-1 {
   font-family: 'Rubik', sans-serif;
   font-size: 3rem;
@@ -2502,21 +2505,21 @@ body {
   border-radius: 50%;
   content: '✓';
 }
-.oppetoo-second-title {
+.section-second-title {
   padding-top: 15px;
   background-color: #ffffff;
 }
-.oppetoo-second-title .counter-container {
+.section-second-title .counter-container {
   color: #767676;
 }
-.oppetoo-second-title .counter-container ul {
+.section-second-title .counter-container ul {
   margin-bottom: 0;
 }
-.oppetoo-second-title .counter-container ul li {
+.section-second-title .counter-container ul li {
   margin-bottom: 1rem;
   list-style: none;
 }
-.oppetoo-second-title .counter-container ul li:before {
+.section-second-title .counter-container ul li:before {
   position: absolute;
   left: 0;
   padding-top: 3px;

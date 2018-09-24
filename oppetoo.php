@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="oppetoo-second-title">
+    <section class="section-second-title">
            <div class="container">
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">

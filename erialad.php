@@ -31,12 +31,24 @@
         </div>
     </section>
 
+    <section class="section-second-title">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                        <cms:editable name='osakond_tutvustus_title' label="Osakonna tutvustuse lõigu pealkiri" order="1" type='text'>Osakonna tutvustus</cms:editable>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="erialad-section">
         <div class="container">
             <div class="media-container-row">
                 <div class="col-lg-12">
-                    <div class="section-text mbr-fonts-style display-7">
-                        <cms:editable name='osakonna_tutvustus' label="Osakonna tutvustus" type='richtext'>
+                    <div class="erialad-section-text mbr-fonts-style display-7">
+                        <cms:editable name='osakonna_tutvustus' label="Osakonna tutvustus" order="2" type='richtext'>
 
                         </cms:editable>
                     </div>
