@@ -31,7 +31,7 @@
                         <img class="thumb" src="<cms:show eriala_image />" alt=""/>
                         <cms:show eriala_content/>
                     </div>
-                    <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                    <div class="mbr-text back-button col-12 col-md-8 mbr-fonts-style display-7">
                         <a href="#" onclick="goBack()">Tagasi</a>
                     </div>
                 </div>

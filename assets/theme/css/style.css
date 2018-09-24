@@ -2706,6 +2706,9 @@ figure[mbr-media-size] {
   .mbr-figure {
     width: 100% !important; } }
 /*! Buttons */
+.back-button {
+  margin-top: 15px;
+}
 .mbr-section-btn {
   margin-left: -.25rem;
   margin-right: -.25rem;
