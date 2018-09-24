@@ -1756,8 +1756,7 @@ body {
   color: #ffe600 !important;
 }
 .features {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 60px;
   background-color: #efefef;
 }
 .features .card-box {
@@ -1781,6 +1780,9 @@ body {
   text-align: left;
   padding-top: 1.5rem;
 }
+.features .p-3 {
+  padding-top: 0 !important;
+}
 .features .mbr-text {
   color: #767676;
 }
@@ -1800,6 +1802,29 @@ body {
 }
 .features .card-title {
   text-align: center;
+}
+.features-intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.features-intro .line {
+  background-color: #149dcc;
+  color: #149dcc;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.features-intro .section-text {
+  padding: 2rem 0;
+}
+.features-intro .inner-container,
+.features-intro p {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .features-intro .inner-container {
+    width: 100% !important;
+  }
 }
 .footer {
   padding-top: 45px;

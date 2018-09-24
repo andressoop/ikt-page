@@ -26,11 +26,25 @@
             </div>
         </div>
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#features-news">
+            <a href="#features-intro">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
         </div>
 
+    </section>
+
+    <section class="features-intro" id="featured-intro">
+        <div class="container">
+            <div class="inner-container" style="width: 100%;">
+                <hr class="line" style="width: 25%;">
+                <div class="section-text align-center mbr-fonts-style display-5">
+                    <cms:editable name='osakonna_intro' label="Osakonna lühike tutvustus" type='richtext'>
+
+                    </cms:editable>
+                </div>
+                <hr class="line" style="width: 25%;">
+            </div>
+        </div>
     </section>
 
     <!-- Uudised -->
