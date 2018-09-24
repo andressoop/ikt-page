@@ -1915,7 +1915,7 @@ body {
 }
 .erialad-section {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 .erialad-section .line {
@@ -1924,9 +1924,6 @@ body {
   align: center;
   height: 2px;
   margin: 0 auto;
-}
-.erialad-section .section-text {
-  padding: 2rem 0;
 }
 .erialad-section .inner-container {
   margin: 0 auto;
@@ -1938,7 +1935,7 @@ body {
 }
 .erialad-list {
   padding-top: 120px;
-  padding-bottom: 45px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 .erialad-list h4 {
