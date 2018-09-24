@@ -1,7 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Praktika' />
+    <cms:template title='Praktika' order="6" />
 
     <section class="praktika-title">
         <div class="container">

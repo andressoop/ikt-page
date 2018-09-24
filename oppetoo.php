@@ -1,7 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Õppetöö' />
+    <cms:template title='Õppetöö' order="7" />
 
     <section class="oppetoo-title">
         <div class="container">

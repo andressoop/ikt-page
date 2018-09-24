@@ -1,11 +1,11 @@
 <?php require_once( 'couch/cms.php' ); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Kalender' clonable='1'>
-        <cms:editable name='desc' label='Description' type='richtext' />
-        <cms:editable name='location' label='Location' type='text' />
+    <cms:template title='Kalender' order="5" clonable='1'>
+        <cms:editable name='desc' label='Ürituse kirjeldus' type='richtext' />
+        <cms:editable name='location' label='Toimumispaik' type='text' />
 
-        <cms:editable name="start_time" label="Time From (24 Hrs)"
+        <cms:editable name="start_time" label="Üritus algab"
           opt_values=' Unspecified |
                       00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
                       04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
@@ -16,7 +16,7 @@
           type='dropdown'
         />
 
-        <cms:editable name="end_time" label="Time Until (24 Hrs)"
+        <cms:editable name="end_time" label="Üritus lõppeb"
           opt_values=' Unspecified |
                       00:00 | 00:30 | 01:00 | 01:30 | 02:00 | 02:30 | 03:00 | 03:30 |
                       04:00 | 04:30 | 05:00 | 05:30 | 06:00 | 06:30 | 07:00 | 07:30 |
@@ -28,8 +28,8 @@
         />
 
         <cms:editable name='end_date'
-            label='Event End Date (if multi-days event)'
-            desc='Enter date in yyyy-mm-dd format e.g. 2010-12-31'
+            label='Mitmepäevase ürituse lõpukuupäev (kui üritus kestab üle 1 päeva)'
+            desc='Sisesta kuupäev formaadis: yyyy-mm-dd näiteks: 2018-12-31'
             type='text'
             validator='regex=/(?:19|20)\d\d-(?:0[1-9]|1[012])-(?:0[1-9]|[12][0-9]|3[01])/'
             separator='#'
@@ -37,7 +37,7 @@
         />
 
         <cms:editable name='image'
-            label='Image'
+            label='Pilt'
             type='image'
         />
 

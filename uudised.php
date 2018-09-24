@@ -1,7 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Uudised' clonable='1' commentable='1'>
+    <cms:template title='Uudised' order="4" clonable='1' commentable='1'>
            <cms:editable name='blog_content' label="Uudise sisu" type='richtext' />
            <cms:editable name='blog_image' label="Pilt"
                crop='1'

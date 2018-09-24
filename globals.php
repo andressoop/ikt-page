@@ -1,5 +1,5 @@
 <?php require_once('couch/cms.php'); ?>
-    <cms:template title="Üldised sätted" executable='0' >
+    <cms:template title="Üldised sätted" order="8" executable='0' >
 
         <cms:editable name='address' no_xss_check='1' label="Aadress" type="richtext"/>
 

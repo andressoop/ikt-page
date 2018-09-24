@@ -1,7 +1,7 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Erialad'/>
+    <cms:template title='Erialade loend' order="2"/>
 
     <section class="erialad-list">
 
@@ -37,10 +37,7 @@
                 <hr class="line" style="width: 25%;">
                 <div class="section-text align-center mbr-fonts-style display-5">
                     <cms:editable name='eriala_intro' label="Eriala intro" type='richtext'>
-                        Osakonnas õpetavad erialaaineid mitmed kogemustega erialaspetsialistid, õppetöö raames teostavad
-                        õpilased erinevaid erialaprojekte. Muutused IKT valdkonnas on kiired ja eeldavad pidevat
-                        enesetäiendamist. Osakonna tugevuseks on avatus uutele ideedele ja koostöövõrgustik erinevate
-                        Eesti ja Euroopa koolidega.
+
                     </cms:editable>
                 </div>
                 <hr class="line" style="width: 25%;">

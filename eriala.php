@@ -1,7 +1,7 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Erialad' clonable='1'>
+    <cms:template title='Erialad' order="3" clonable='1'>
         <cms:editable name='eriala_content' label="Eriala tutvustus" type='richtext'/>
         <cms:editable name='eriala_image' label="Pilt"
                       crop='1'
