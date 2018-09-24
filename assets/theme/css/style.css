@@ -2038,19 +2038,19 @@ body {
   margin-bottom: 1rem;
   list-style: none;
 }
-.praktika-body .counter-container ul li:before {
+.counter-container ul li:before {
   position: absolute;
   left: 0;
   padding-top: 3px;
   display: inline-block;
   text-align: center;
-  margin: 5px 10px;
-  line-height: 20px;
+  margin: 3px 15px;
+  line-height: 15px;
   transition: all .2s;
   color: #ffffff;
-  background: #149dcc;
-  width: 25px;
-  height: 25px;
+  background: #0099d8;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   content: '✓';
 }
@@ -2068,22 +2068,6 @@ body {
 .cid-qLBeYTfcvq .counter-container ul li {
   margin-bottom: 1rem;
   list-style: none;
-}
-.cid-qLBeYTfcvq .counter-container ul li:before {
-  position: absolute;
-  left: 0;
-  padding-top: 3px;
-  display: inline-block;
-  text-align: center;
-  margin: 5px 10px;
-  line-height: 20px;
-  transition: all .2s;
-  color: #ffffff;
-  background: #149dcc;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  content: '✓';
 }
 .cid-qLBffdL1Bi .navbar {
   padding: .5rem 0;
@@ -2475,8 +2459,8 @@ body {
   color: #767676;
 }
 .eriala-content {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 .eriala-content .counter-container {
@@ -2488,22 +2472,6 @@ body {
 .eriala-content .counter-container ul li {
   margin-bottom: 1rem;
   list-style: none;
-}
-.eriala-content .counter-container ul li:before {
-  position: absolute;
-  left: 0;
-  padding-top: 3px;
-  display: inline-block;
-  text-align: center;
-  margin: 5px 10px;
-  line-height: 20px;
-  transition: all .2s;
-  color: #ffffff;
-  background: #149dcc;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  content: '✓';
 }
 .section-second-title {
   padding-top: 15px;
@@ -2519,23 +2487,6 @@ body {
   margin-bottom: 1rem;
   list-style: none;
 }
-.section-second-title .counter-container ul li:before {
-  position: absolute;
-  left: 0;
-  padding-top: 3px;
-  display: inline-block;
-  text-align: center;
-  margin: 5px 10px;
-  line-height: 20px;
-  transition: all .2s;
-  color: #ffffff;
-  background: #149dcc;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  content: '✓';
-}
-
 section {
   background-color: #eeeeee; }
 
