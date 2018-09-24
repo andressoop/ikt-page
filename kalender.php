@@ -73,7 +73,7 @@
     </cms:if>
 
    
-    <section class="eriala-head">
+    <section class="calendar-container">
         <div class="container">
             <div class="media-container-row">
 

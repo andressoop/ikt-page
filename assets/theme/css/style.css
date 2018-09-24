@@ -2004,9 +2004,17 @@ body {
 .eriala-head .mbr-section-subtitle {
   color: #767676;
 }
+.calendar-container {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
 .blog-posts {
   padding-bottom: 60px;
   background-color: #ffffff;
+}
+section .blog-posts {
+  padding-bottom: 0;
 }
 .blog-posts .mbr-text,
 .blog-posts blockquote {

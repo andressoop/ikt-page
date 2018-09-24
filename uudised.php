@@ -13,7 +13,7 @@
     </cms:template>
     <cms:if k_is_page >
 
-    <section class="mbr-section content4 eriala-head" id="content4-16">
+    <section class="mbr-section content4 eriala-head">
 
         <div class="container">
             <div class="media-container-row">
@@ -24,9 +24,9 @@
         </div>
     </section>
 
-    <section class="mbr-section article content1 blog-posts" id="content1-17">
+    <section class="mbr-section article content1 blog-posts">
 
-        <div class="container">
+        <div class="container ">
             <div class="media-container-row">
                 <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
                     <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
