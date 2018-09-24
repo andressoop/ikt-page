@@ -77,50 +77,99 @@
         <div class="container">
             <div class="media-container-row">
 
-            <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
-                    <table class="calendar_big">
-                        <tr>
-                            <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
-                            <th colspan="5"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></th>
-                            <th><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></th>
-                        </tr>
-                        <tr>
-                            <cms:repeat count='7'>
-                            <td class="months_heading"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></td>
-                            </cms:repeat>
-                        </tr>
+                <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
+                    <div class="container-fluid calendar_big">
+                        <header>
+                            <div class="row p-1 d-none d-sm-flex">
+                                <span class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></span>
+                                <h4 class="col-sm p-1 mb-4 text-center"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></h4>
+                                <span class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></span>
+                            </div>
+                            <div class="col d-sm-none">
+                                <h5 class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a> <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /> <a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></h5>
+                            </div>
+                            <div class="row d-none d-sm-flex p-1 bg-darkblue text-white">
+                                <cms:repeat count='7'>
+                                    <h5 class="col-sm p-1 text-center"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></h5>
+                                </cms:repeat>
+                            </div>
+                        </header>
 
-                        <cms:weeks>
-                            <tr>
-                            <cms:days >
-                                <cms:if k_timeline_position='present'>
-                                    <cms:set tdclass='today' />
-                                <cms:else />
-                                    <cms:set tdclass='' />
-                                </cms:if>
-
-                                <cms:if k_position='current_month' >
-                                    <cms:if k_count_entries >
-                                        <td class='entries <cms:show tdclass />' align='center'>
-                                            <cms:show k_day />
-                                            <ul>
-                                            <cms:entries limit='5' skip_custom_fields='1'>
-                                                <li>
-                                                    <a href="<cms:show k_page_link />" class="calendar-link"><cms:show k_page_title /></a>
-                                                </li>
-                                            </cms:entries>
-                                            </ul>
-                                        </td>
+                        <div class="row border border-right-0 border-bottom-0 calendar_big_days">
+                            <cms:weeks>
+                                <cms:days >
+                                    <cms:if k_timeline_position='present'>
+                                        <cms:set calclass='cal-today' />
                                     <cms:else />
-                                        <td class='<cms:show tdclass />' ><cms:show k_day /></td>
+                                        <cms:set calclass='' />
                                     </cms:if>
-                                <cms:else />
-                                    <td class='other_month'><cms:show k_day /></td>
-                                </cms:if>
-                            </cms:days>
-                            </tr>
-                        </cms:weeks>
-                    </table>
+
+                                    <cms:if k_day_of_week='0'>
+                                        <cms:set day_of_week='Pühapäev' />
+                                    <cms:else />
+                                        <cms:if k_day_of_week='1'>
+                                            <cms:set day_of_week='Esmaspäev' />
+                                        <cms:else />
+                                            <cms:if k_day_of_week='2'>
+                                                <cms:set day_of_week='Teisipäev' />
+                                            <cms:else />
+                                                <cms:if k_day_of_week='3'>
+                                                    <cms:set day_of_week='Kolmapäev' />
+                                                <cms:else />
+                                                    <cms:if k_day_of_week='4'>
+                                                        <cms:set day_of_week='Neljapäev' />
+                                                    <cms:else />
+                                                        <cms:if k_day_of_week='5'>
+                                                            <cms:set day_of_week='Reede' />
+                                                        <cms:else />
+                                                            <cms:if k_day_of_week='6'>
+                                                                <cms:set day_of_week='Laupäev' />
+                                                            </cms:if>
+                                                        </cms:if>
+                                                    </cms:if>
+                                                </cms:if>
+                                            </cms:if>
+                                        </cms:if>
+                                    </cms:if>
+
+                                    <cms:if k_position='current_month' >
+                                        <cms:if k_count_entries >
+                                            <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate <cms:show calclass />">
+                                                <h5 class="row align-items-center">
+                                                    <span class="date col-1"><cms:show k_day /></span>
+                                                    <small class="col d-sm-none text-center text-muted"><cms:show day_of_week /></small>
+                                                    <span class="col-1"></span>
+                                                </h5>
+                                                <cms:entries limit='5' skip_custom_fields='1'>
+                                                    <li>
+                                                        <a href="<cms:show k_page_link />" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="<cms:show k_page_title />"><cms:show k_page_title /></a>
+                                                    </li>
+                                                </cms:entries>
+                                            </div>
+                                        <cms:else />
+                                            <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate <cms:show calclass />">
+                                                <h5 class="row align-items-center">
+                                                    <span class="date col-1"><cms:show k_day /></span>
+                                                    <small class="col d-sm-none text-center text-muted"><cms:show day_of_week /></small>
+                                                    <span class="col-1"></span>
+                                                </h5>
+                                            </div>
+                                        </cms:if>
+                                    <cms:else />
+                                        <cms:set calclass='d-none d-sm-inline-block bg-light text-muted' />
+                                        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none <cms:show calclass />">
+                                            <h5 class="row align-items-center">
+                                                <span class="date col-1"><cms:show k_day /></span>
+                                            </h5>
+                                        </div>
+                                    </cms:if>
+
+                                </cms:days>
+                                <div class="w-100"></div>
+                            </cms:weeks>
+                        </div>
+
+                    </div>
                 </cms:calendar>
 
             </div>
