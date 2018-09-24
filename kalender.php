@@ -140,11 +140,13 @@
                                                     <small class="col d-sm-none text-center text-muted"><cms:show day_of_week /></small>
                                                     <span class="col-1"></span>
                                                 </h5>
-                                                <cms:entries limit='5' skip_custom_fields='1'>
-                                                    <li>
-                                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id />" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="<cms:show k_page_title />"><cms:show k_page_title /></a>
-                                                    </li>
-                                                </cms:entries>
+                                                <ul class="cal-list">
+                                                    <cms:entries limit='5' skip_custom_fields='1'>
+                                                        <li>
+                                                            <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id />" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="<cms:show k_page_title />"><cms:show k_page_title /></a>
+                                                        </li>
+                                                    </cms:entries>
+                                                </ul>
                                             </div>
                                         <cms:else />
                                             <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate <cms:show calclass />">

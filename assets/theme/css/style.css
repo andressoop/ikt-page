@@ -3116,6 +3116,12 @@ table.calendar_small td.entries.today a{
   justify-content: space-between;
 }
 
+.cal-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 @media (max-width:575px) {
   .calendar_big {
     margin: 0 0 2rem 0;
