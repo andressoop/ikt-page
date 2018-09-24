@@ -3043,7 +3043,6 @@ table.calendar_small{
   width: 265px;
   height: 265px;
   font-size: 14px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 10px;
   border-collapse: collapse;
   border-spacing:0;
@@ -3054,6 +3053,7 @@ table.calendar_small th{
   margin: 0;
   font-weight:bold;
   border-bottom: 1px solid #555555;
+  text-align: center;
 }
 
 table.calendar_small td{
