@@ -103,7 +103,7 @@
                                 </tr>
                             </cms:weeks>
                         </table>
-                        <a href="<cms:link masterpage='kalender.php' />" class="calendar-link">vaata suurt kalendrit</a>
+                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date />" class="calendar-link">vaata suurt kalendrit</a>
                     </cms:calendar>
                 </div>
 

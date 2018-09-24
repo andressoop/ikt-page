@@ -81,12 +81,12 @@
                     <div class="container-fluid calendar_big">
                         <header>
                             <div class="row p-1 d-none d-sm-flex">
-                                <span class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></span>
+                                <span class="col-sm p-1 text-center"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_prev_calendar_date />"> << </a></span>
                                 <h4 class="col-sm p-1 mb-4 text-center"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></h4>
-                                <span class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></span>
+                                <span class="col-sm p-1 text-center"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_next_calendar_date />"> >> </a></span>
                             </div>
                             <div class="col d-sm-none">
-                                <h5 class="col-sm p-1 text-center"><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a> <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /> <a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></h5>
+                                <h5 class="col-sm p-1 text-center"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_prev_calendar_date />"> << </a> <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /> <a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></h5>
                             </div>
                             <div class="row d-none d-sm-flex p-1 bg-darkblue text-white">
                                 <cms:repeat count='7'>
@@ -142,7 +142,7 @@
                                                 </h5>
                                                 <cms:entries limit='5' skip_custom_fields='1'>
                                                     <li>
-                                                        <a href="<cms:show k_page_link />" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="<cms:show k_page_title />"><cms:show k_page_title /></a>
+                                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id />" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="<cms:show k_page_title />"><cms:show k_page_title /></a>
                                                     </li>
                                                 </cms:entries>
                                             </div>
