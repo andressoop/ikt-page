@@ -111,7 +111,7 @@
                 <div class="container">
                     <div class="media-container-row">
                         <div class="mbr-textmbr-fonts-style display-7">
-                            <div class="mbr-text counter-container mbr-fonts-style display-7">
+                            <div class="mbr-text mbr-fonts-style display-7">
                                 <div class="sidebar-title">Postituste arhiiv</div>
                                 <ul>
                                     <cms:archives masterpage='uudised.php'>
