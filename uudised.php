@@ -28,7 +28,7 @@
 
         <div class="container ">
             <div class="media-container-row">
-                <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7 blog-article">
                     <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
                     <img class="thumb" src="<cms:show blog_image />" alt=""/>
                     <cms:show blog_content />
@@ -61,12 +61,11 @@
 
                         <cms:embed 'comment-form.inc' />
                     </div>
-
+                    <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
+                        <a href="#" onclick="goBack()">Tagasi</a>
+                    </div>
                 </div>
 
-                <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">
-                    <a href="#" onclick="goBack()">Tagasi</a>
-                </div>
             </div>
         </div>
 
