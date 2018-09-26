@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <link rel="shortcut icon" href="assets/images/KHK_logod_icon.png" type="image/x-icon">
-        <meta name="description" content="">
+        <meta name="description" content="Tartu Kutsehariduskeskus INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND">
+        <meta name="keywords" content="TKHK,KHK,kutsehariduskeskus,Tartu Kutsehariduskeskus,IKT,info- ja kommunikatsioonitehnoloogia osakond">
+        <meta name="author" content="Andres Soop ja Sandra Õnne">
         <title>IKT osakond</title>
+
+        <link rel="shortcut icon" href="assets/images/KHK_logod_icon.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
         <link rel="stylesheet" href="assets/tether/tether.min.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
