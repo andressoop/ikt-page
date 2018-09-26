@@ -1,8 +1,8 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
     <cms:template title='Avaleht' order="1"/>
-        <cms:editable name='main_title_ee' label="Lehe pealkiri / hüüdlause" order="1" type='text' />
-        <cms:editable name='main_title_en' label="ENG Lehe pealkiri / hüüdlause" order="2" type='text' />
+        <cms:editable name='main_title_ee' label="(EST) Lehe pealkiri / hüüdlause" order="1" type='text' />
+        <cms:editable name='main_title_en' label="(ENG) Lehe pealkiri / hüüdlause" order="2" type='text' />
 
     <!-- Avakuva koos videoga -->
     <section class="mbr-fullscreen">

@@ -48,14 +48,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Avaleht</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="erialad.php"><span class="mbri-features mbr-iconfont mbr-iconfont-btn"></span>Erialad</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="uudised.php"><span class="mbri-sun mbr-iconfont mbr-iconfont-btn"></span>Päevakajalist</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="praktika.php"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span>Praktika</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="oppetoo.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="index.php"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "avaleht_<cms:show k_lang />" masterpage='translations.php' /></a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="erialad.php"><span class="mbri-features mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "erialad_<cms:show k_lang />" masterpage='translations.php' /></a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="uudised.php"><span class="mbri-sun mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "uudised_<cms:show k_lang />" masterpage='translations.php' /></a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="praktika.php"><span class="mbri-website-theme mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "praktika_<cms:show k_lang />" masterpage='translations.php' /></a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-4" href="oppetoo.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "oppetoo_<cms:show k_lang />" masterpage='translations.php' /></a></li>
                     </ul>
                     <div class="navbar-buttons mbr-section-btn">
-                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
+                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span><cms:get_custom_field "siseveeb_<cms:show k_lang />" masterpage='translations.php' /></a>
                     </div>
                     <div class="navbar-flags">
                         <div class="flag-item"><a href="<cms:show k_link_ee />"><span class="flag-icon flag-icon-ee"></span></a></div>
