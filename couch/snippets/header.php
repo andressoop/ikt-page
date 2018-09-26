@@ -58,8 +58,8 @@
                         <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
                     </div>
                     <div class="navbar-flags">
-                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-ee"></span></a></div>
-                        <div class="flag-item"><a href=""><span class="flag-icon flag-icon-gb"></span></a></div>
+                        <div class="flag-item"><a href="<cms:show k_link_ee />"><span class="flag-icon flag-icon-ee"></span></a></div>
+                        <div class="flag-item"><a href="<cms:show k_link_en />"><span class="flag-icon flag-icon-gb"></span></a></div>
                     </div>
                 </div>
             </nav>

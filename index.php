@@ -1,6 +1,8 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
     <cms:template title='Avaleht' order="1"/>
+        <cms:editable name='main_title_ee' label="Lehe pealkiri / hüüdlause" order="1" type='text' />
+        <cms:editable name='main_title_en' label="ENG Lehe pealkiri / hüüdlause" order="2" type='text' />
 
     <!-- Avakuva koos videoga -->
     <section class="mbr-fullscreen">
@@ -10,9 +12,7 @@
             <div class="row justify-content-md-center">
                 <div class="mbr-white col-md-10 title-area">
                     <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
-                        <cms:editable name='main_title' label="Lehe pealkiri / hüüdlause" type='text'>
-                            INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND
-                        </cms:editable>
+                        <cms:get "main_title_<cms:show k_lang />" />
                     </h1>
                     <div class="mbr-section-btn">
                         <cms:editable name="group_main_button" label="Pealkirja nupp" desc="Lehe hüüdlause all oleva nupu seadistamine" type="group"/>
