@@ -51,7 +51,7 @@
                         <li class="nav-item"><a class="nav-link link text-white display-4" href="oppetoo.php"><span class="mbri-paperclip mbr-iconfont mbr-iconfont-btn"></span>Õppetöö</a></li>
                     </ul>
                     <div class="navbar-buttons mbr-section-btn">
-                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee" target="_blank"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
+                        <a class="btn btn-sm btn-primary display-4" href="https://tkhk.siseveeb.ee"><span class="mbri-sites mbr-iconfont mbr-iconfont-btn"></span>Siseveeb</a>
                     </div>
                     <div class="navbar-flags">
                         <div class="flag-item"><a href=""><span class="flag-icon flag-icon-ee"></span></a></div>

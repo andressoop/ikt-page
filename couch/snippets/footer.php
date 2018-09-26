@@ -21,28 +21,28 @@
 
                                 <cms:if facebook_id>
                                     <div class="soc-item">
-                                        <a href="<cms:show facebook_id />" target="_blank">
+                                        <a href="<cms:show facebook_id />">
                                             <span class="mbr-iconfont mbr-iconfont-social socicon-facebook"></span>
                                         </a>
                                     </div>
                                 </cms:if>
                                 <cms:if facebook_id>
                                     <div class="soc-item">
-                                        <a href="<cms:show youtube_id />" target="_blank">
+                                        <a href="<cms:show youtube_id />">
                                             <span class="mbr-iconfont mbr-iconfont-social socicon-youtube"></span>
                                         </a>
                                     </div>
                                 </cms:if>
                                 <cms:if twitter_id>
                                     <div class="soc-item">
-                                        <a href="<cms:show twitter_id />" target="_blank">
+                                        <a href="<cms:show twitter_id />">
                                             <span class="mbr-iconfont mbr-iconfont-social socicon-twitter"></span>
                                         </a>
                                     </div>
                                 </cms:if>
                                 <cms:if instagram_id>
                                     <div class="soc-item">
-                                        <a href="<cms:show instagram_id />" target="_blank">
+                                        <a href="<cms:show instagram_id />">
                                             <span class="mbr-iconfont mbr-iconfont-social socicon-instagram"></span>
                                         </a>
                                     </div>
@@ -63,7 +63,7 @@
                     <div class="media-container-row mbr-white">
                         <div class="col-sm-12 copyright">
                             <p class="mbr-text mbr-fonts-style display-7">
-                                © Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/" target="_blank">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/" target="_blank">Andres Soop</a>.
+                                © Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/" target="_blank">Andres Soop</a>.
                             </p>
                         </div>
                     </div>
