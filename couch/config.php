@@ -92,7 +92,7 @@
 
     // 14.
     // Will be used as the sender of messages delivered by contact forms to the address above.
-    define( 'K_EMAIL_FROM', 'ikt.contact.form@khk.ee/' );
+    define( 'K_EMAIL_FROM', 'info@khk.ee' );
 
     // 15.
     // By default the inbuilt php function 'mail()' is used to deliver messages.

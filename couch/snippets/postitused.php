@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="media-container-row">
-                            <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+                            <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
                                 <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
                                 <img class="thumb" src="<cms:show blog_image />" alt=""/>

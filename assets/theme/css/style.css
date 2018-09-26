@@ -2010,8 +2010,10 @@ body {
   background-color: #ffffff;
 }
 .blog-posts {
-  padding-bottom: 60px;
   background-color: #ffffff;
+}
+.blog-article {
+  padding-bottom: 60px;
 }
 section .blog-posts {
   padding-bottom: 0;
