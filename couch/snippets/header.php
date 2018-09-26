@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <meta name="description" content="Tartu Kutsehariduskeskus INFO- JA KOMMUNIKATSIOONITEHNOLOOGIA OSAKOND">
         <meta name="keywords" content="TKHK,KHK,kutsehariduskeskus,Tartu Kutsehariduskeskus,IKT,info- ja kommunikatsioonitehnoloogia osakond">
+        <meta name="theme-color" content="#0099d8">
         <meta name="author" content="Andres Soop ja Sandra Õnne">
         <title>IKT osakond</title>
 
