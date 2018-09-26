@@ -43,7 +43,7 @@
                     <cms:if k_paginated_bottom>
                     <!-- Navigeerimisnupud -->
                     <div class="media-container-row">
-                        <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+                        <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
                             <div class="mbr-section-btn text-center">
                                 <cms:if k_paginate_link_next >
