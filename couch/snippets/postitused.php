@@ -70,7 +70,7 @@
                         <table class="calendar_small">
                             <tr>
                                 <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
-                                <th colspan="5"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></th>
+                                <th colspan="5"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a></th>
                                 <th><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></th>
                             </tr>
                             <tr>
@@ -103,7 +103,6 @@
                                 </tr>
                             </cms:weeks>
                         </table>
-                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date />" class="calendar-link">vaata suurt kalendrit</a>
                     </cms:calendar>
                 </div>
 
