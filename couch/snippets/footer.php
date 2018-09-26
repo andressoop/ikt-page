@@ -5,12 +5,12 @@
                 <div class="media-container-row content mbr-white">
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                            <cms:get_custom_field 'address' masterpage='globals.php' />
+                            <cms:get_custom_field "address_<cms:show k_lang />" masterpage='globals.php' />
                         </p>
                     </div>
                     <div class="col-12 col-md-3 mbr-fonts-style display-7">
                         <p class="mbr-text">
-                            <cms:get_custom_field 'links' masterpage='globals.php' />
+                            <cms:get_custom_field "links_<cms:show k_lang />" masterpage='globals.php' />
                         </p>
                         <div class="footer-lower">
                             <div class="social-list">
@@ -63,7 +63,11 @@
                     <div class="media-container-row mbr-white">
                         <div class="col-sm-12 copyright">
                             <p class="mbr-text mbr-fonts-style display-7">
-                                © Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/" target="_blank">Andres Soop</a>.
+                                <cms:if k_lang='ee'>
+                                © Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>.
+                                <cms:else />
+                                © Created by the winners of the Professional Webmasters Competition 2018, <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> and <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>.
+                                </cms:if>
                             </p>
                         </div>
                     </div>
@@ -79,38 +83,40 @@
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
                         <div class="modal-header justify-content-center">
-                            <h4 class="modal-title">Kirjuta IKT osakonnale</h4>
+                            <h4 class="modal-title"><cms:get_custom_field "contact_title_<cms:show k_lang />" masterpage='translations.php' /></h4>
                         </div>
                         <div class="modal-body">
                             <cms:capture into='my_buffer'>
                                 <div class="form-group">
-                                    <cms:input type="text" class="form-control form-field" name="name" id="name" placeholder="Ees- ja perekonnanimi"  required="1" />
+                                    <cms:input type="text" class="form-control form-field" name="name" id="name" placeholder="<cms:get_custom_field "placeholder_name_<cms:show k_lang />" masterpage='translations.php' />"  required="1" />
                                     <cms:if k_error_name>
                                         <div class="form-error">
-                                            Palun sisestage oma nimi.
+                                            <cms:get_custom_field "error_name_<cms:show k_lang />" masterpage='translations.php' />
                                         </div>
                                     </cms:if>
                                 </div>
                                 <div class="form-group">
-                                    <cms:input type="text" class="form-control form-field" name="email" id="email" placeholder="Sinu e-posti aadress"  required="1" validator="email" />
+                                    <cms:input type="text" class="form-control form-field" name="email" id="email" placeholder="<cms:get_custom_field "placeholder_email_<cms:show k_lang />" masterpage='translations.php' />"  required="1" validator="email" />
                                     <cms:if k_error_email>
                                         <div class="form-error">
-                                            Palun sisestaga korrektne e-posti aadress.
+                                            <cms:get_custom_field "error_email_<cms:show k_lang />" masterpage='translations.php' />
                                         </div>
                                     </cms:if>
                                 </div>
                                 <div class="form-group">
-                                    <cms:input type="textarea" class="form-control form-field" name="message" id="message" placeholder="Kirja sisu" row="5" required="1" />
+                                    <cms:input type="textarea" class="form-control form-field" name="message" id="message" placeholder="<cms:get_custom_field "placeholder_message_<cms:show k_lang />" masterpage='translations.php' />" row="5" required="1" />
                                     <cms:if k_error_message>
                                         <div class="form-error">
-                                            Palun lisage kirjale ka sisu.
+                                            <cms:get_custom_field "error_message_<cms:show k_lang />" masterpage='translations.php' />
                                         </div>
                                     </cms:if>
                                 </div>
                             </cms:capture>
 
                             <cms:if k_success >
-                                <p id='mail_success' class='form-success'>Kiri saadetud. Vastame teile peatselt.</p>
+                                <p id='mail_success' class='form-success'>
+                                    <cms:get_custom_field "success_message_<cms:show k_lang />" masterpage='translations.php' />
+                                </p>
 
                                 <cms:send_mail debug='1' from=k_email_from to=k_email_to subject='IKT lehe kaudu saabus kiri'>
                                     <cms:show k_success />
@@ -122,7 +128,9 @@
 
                             <div class="modal-footer mbr-section-btn text-center">
                                 <cms:if "<cms:not k_success />" >
-                                    <button type="submit" class="btn btn-secondary display-4">Saada</button>
+                                    <button type="submit" class="btn btn-secondary display-4">
+                                        <cms:get_custom_field "button_send_<cms:show k_lang />" masterpage='translations.php' />
+                                    </button>
                                 </cms:if>
                             </div>
 
