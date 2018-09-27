@@ -32,7 +32,13 @@
                         <cms:show eriala_content/>
                     </div>
                     <div class="mbr-text back-button col-12 col-md-8 mbr-fonts-style display-7">
-                        <a href="#" onclick="goBack()">Tagasi</a>
+                        <a href="#" onclick="goBack()">
+                            <cms:if k_lang='ee'>
+                                Tagasi
+                                <cms:else />
+                                Go back
+                            </cms:if>
+                        </a>
                     </div>
                 </div>
             </div>
