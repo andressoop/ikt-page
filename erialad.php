@@ -1,7 +1,12 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Erialade loend' order="2"/>
+    <cms:template title='Erialade loend' order="2">
+        <cms:editable name='osakond_tutvustus_title_ee' label="(EST) Osakonna tutvustuse lõigu pealkiri" order="1" type='text' />
+        <cms:editable name='osakond_tutvustus_title_en' label="(ENG) Osakonna tutvustuse lõigu pealkiri" order="2" type='text' />
+        <cms:editable name='osakond_tutvustus_ee' label="(EST) Osakonna tutvustus" order="3" type='richtext' />
+        <cms:editable name='osakond_tutvustus_en' label="(ENG) Osakonna tutvustus" order="4" type='richtext' />
+    </cms:template>
 
     <section class="erialad-list">
 
@@ -21,7 +26,13 @@
                                     <cms:excerpt count='15' ignore='img'>
                                         <cms:show eriala_content/>
                                     </cms:excerpt>
-                                    <a href="<cms:show k_page_link />">Tutvu lähemalt...</a>
+                                    <a href="<cms:show k_page_link />">
+                                        <cms:if k_lang='ee'>
+                                            Tutvu lähemalt...
+                                            <cms:else />
+                                            Learn more...
+                                        </cms:if>
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -36,7 +47,7 @@
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
                     <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                        <cms:editable name='osakond_tutvustus_title' label="Osakonna tutvustuse lõigu pealkiri" order="1" type='text'>Osakonna tutvustus</cms:editable>
+                        <cms:get "osakond_tutvustus_title_<cms:show k_lang />" />
                     </h2>
                 </div>
             </div>
@@ -48,9 +59,7 @@
             <div class="media-container-row">
                 <div class="col-lg-12">
                     <div class="erialad-section-text mbr-fonts-style display-7">
-                        <cms:editable name='osakonna_tutvustus' label="Osakonna tutvustus" order="2" type='richtext'>
-
-                        </cms:editable>
+                        <cms:get "osakond_tutvustus_<cms:show k_lang />" />
                     </div>
                 </div>
             </div>
