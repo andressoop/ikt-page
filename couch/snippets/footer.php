@@ -84,6 +84,7 @@
                     <div class="modal-content">
                         <div class="modal-header justify-content-center">
                             <h4 class="modal-title"><cms:get_custom_field "contact_title_<cms:show k_lang />" masterpage='translations.php' /></h4>
+                            <a href="#" class="close-event" data-dismiss="modal"></a>
                         </div>
                         <div class="modal-body">
                             <cms:capture into='my_buffer'>
