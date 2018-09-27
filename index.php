@@ -1,8 +1,18 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
-    <cms:template title='Avaleht' order="1"/>
+    <cms:template title='Avaleht' order="1">
         <cms:editable name='main_title_ee' label="(EST) Lehe pealkiri / hüüdlause" order="1" type='text' />
         <cms:editable name='main_title_en' label="(ENG) Lehe pealkiri / hüüdlause" order="2" type='text' />
+
+        <cms:editable name="group_main_button" label="Pealkirja nupp" desc="Lehe hüüdlause all oleva nupu seadistamine" order="3" type="group"/>
+            <cms:editable name="main_button_text_ee" label="(EST) Nupu tekst" group="group_main_button" order="1" type="text" />
+            <cms:editable name="main_button_text_en" label="(ENG) Nupu tekst" group="group_main_button" order="2" type="text" />
+            <cms:editable name="main_button_link_ee" label="(EST) Nupu URL" group="group_main_button" order="3" type="text" />
+            <cms:editable name="main_button_link_en" label="(ENG) Nupu URL" group="group_main_button" order="4" type="text" />
+
+        <cms:editable name='osakonna_intro_ee' label="(EST) Osakonna lühike tutvustus" order="4" type='richtext' />
+        <cms:editable name='osakonna_intro_en' label="(ENG) Osakonna lühike tutvustus" order="5" type='richtext' />
+    </cms:template>
 
     <!-- Avakuva koos videoga -->
     <section class="mbr-fullscreen">
@@ -15,18 +25,15 @@
                         <cms:get "main_title_<cms:show k_lang />" />
                     </h1>
                     <div class="mbr-section-btn">
-                        <cms:editable name="group_main_button" label="Pealkirja nupp" desc="Lehe hüüdlause all oleva nupu seadistamine" type="group"/>
-                        <a class="btn btn-md btn-secondary display-4" href="<cms:editable name="main_button_link" label="Nupu URL" group="group_main_button" order="2 "type="text">erialad.php</cms:editable>">
-                            <cms:editable name="main_button_text" label="Nupu tekst" group="group_main_button" order="1" type="text">
-                                TULE ÕPPIMA
-                            </cms:editable>
+                        <a class="btn btn-md btn-secondary display-4" href="<cms:link masterpage="<cms:get "main_button_link_<cms:show k_lang />" />" />">
+                            <cms:get "main_button_text_<cms:show k_lang />" />
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-            <a href="#features-intro">
+            <a href="#featured-intro">
                 <i class="mbri-down mbr-iconfont"></i>
             </a>
         </div>
@@ -38,9 +45,7 @@
             <div class="inner-container" style="width: 100%;">
                 <hr class="line" style="width: 25%;">
                 <div class="section-text align-center mbr-fonts-style display-5">
-                    <cms:editable name='osakonna_intro' label="Osakonna lühike tutvustus" type='richtext'>
-
-                    </cms:editable>
+                    <cms:get "osakonna_intro_<cms:show k_lang />" />
                 </div>
                 <hr class="line" style="width: 25%;">
             </div>
@@ -71,7 +76,13 @@
                                 </div>
                             </div>
                             <div class="mbr-section-btn text-center">
-                                <a href="<cms:show k_page_link />" class="btn btn-secondary display-4">Loe lähemalt<br></a>
+                                <a href="<cms:show k_page_link />" class="btn btn-secondary display-4">
+                                    <cms:if k_lang='ee'>
+                                        Loe lähemalt
+                                        <cms:else />
+                                        Read more
+                                    </cms:if>
+                                </a>
                             </div>
                         </div>
                     </div>
