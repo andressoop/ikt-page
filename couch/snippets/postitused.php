@@ -20,7 +20,7 @@
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
-                           limit='10' >
+                           limit='1' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">
@@ -31,10 +31,20 @@
                         <div class="media-container-row">
                             <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
-                                <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
+                                <cms:if k_lang='ee'>
+                                    <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
+                                    <cms:else />
+                                    <p class="align-right">Posted on <cms:date k_page_date format='%d %B %Y' locale="english" charset="ISO-8859-4" /></p>
+                                </cms:if>
                                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
                                 <cms:excerptHTML count='75' ignore='img'><cms:show blog_content /></cms:excerptHTML>
-                                <a href="<cms:show k_page_link />">Loe tervet artiklit</a>
+                                <a href="<cms:show k_page_link />">
+                                    <cms:if k_lang='ee'>
+                                        Loe tervet artiklit
+                                        <cms:else />
+                                        Read full article
+                                    </cms:if>
+                                </a>
 
                             </div>
                         </div>
@@ -42,18 +52,34 @@
 
                     <cms:if k_paginated_bottom>
                     <!-- Navigeerimisnupud -->
-                    <div class="media-container-row">
-                        <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
+                    <div class="container">
+                        <div class="media-container-row">
+                            <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
-                            <div class="mbr-section-btn text-center">
-                                <cms:if k_paginate_link_next >
-                                <a href="<cms:show k_paginate_link_next />" class="btn btn-secondary display-4">Vanemad postitused<br></a>
-                                </cms:if>
-                                <cms:if k_paginate_link_prev >
-                                <a href="<cms:show k_paginate_link_prev />" class="btn btn-secondary display-4">Uuemad postitused<br></a>
-                                </cms:if>
+                                <div class="paginate-next">
+                                    <cms:if k_paginate_link_next >
+                                        <a href="<cms:show_with_lc k_paginate_link_next />">
+                                            <cms:if k_lang='ee'>
+                                                Vanemad postitused
+                                                <cms:else />
+                                                Older articles
+                                            </cms:if>
+                                        </a>
+                                    </cms:if>
+                                </div>
+                                <div class="paginate-prev">
+                                    <cms:if k_paginate_link_prev >
+                                        <a href="<cms:show_with_lc k_paginate_link_prev />">
+                                            <cms:if k_lang='ee'>
+                                                Uuemad postitused
+                                                <cms:else />
+                                                Newer articles
+                                            </cms:if>
+                                        </a>
+                                    </cms:if>
+                                </div>
+
                             </div>
-
                         </div>
                     </div>
                     </cms:if>

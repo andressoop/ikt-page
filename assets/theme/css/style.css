@@ -3179,3 +3179,11 @@ table.calendar_small td.entries.today a{
 .close-event:after {
   transform: rotate(-45deg);
 }
+
+/* Navigation buttons */
+.paginate-next {
+  float: left;
+}
+.paginate-prev {
+  float: right;
+}
