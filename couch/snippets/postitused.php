@@ -95,13 +95,23 @@
                     <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='kalender.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
-                                <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
-                                <th colspan="5"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a></th>
-                                <th><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></th>
+                                <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></th>
+                                <th colspan="5">
+                                    <cms:if k_lang='ee'>
+                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a>
+                                        <cms:else />
+                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" /></a>
+                                    </cms:if>
+                                </th>
+                                <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></th>
                             </tr>
                             <tr>
                                 <cms:repeat count='7'>
-                                    <td class="months_heading"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></td>
+                                    <cms:if k_lang='ee'>
+                                        <td class="months_heading"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></td>
+                                        <cms:else />
+                                        <td class="months_heading"><cms:zebra 'M' 'T' 'W' 'T' 'F' 'S' 'S'/></td>
+                                    </cms:if>
                                 </cms:repeat>
                             </tr>
 
@@ -137,10 +147,20 @@
                     <div class="media-container-row">
                         <div class="mbr-textmbr-fonts-style display-7">
                             <div class="mbr-text mbr-fonts-style display-7">
-                                <div class="sidebar-title">Postituste arhiiv</div>
+                                <div class="sidebar-title">
+                                    <cms:if k_lang='ee'>
+                                        Postituste arhiiv
+                                        <cms:else />
+                                        News archive
+                                    </cms:if>
+                                </div>
                                 <ul>
                                     <cms:archives masterpage='uudised.php'>
-                                        <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                        <cms:if k_lang='ee'>
+                                            <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                            <cms:else />
+                                            <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
+                                        </cms:if>
                                     </cms:archives>
                                 </ul>
                             </div>
