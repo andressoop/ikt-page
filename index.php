@@ -66,11 +66,11 @@
                                 </div>
                                 <div class="card-box">
                                     <h4 class="card-title mbr-fonts-style display-7">
-                                        <cms:show k_page_title/>
+                                        <cms:get "uudis_title_<cms:show k_lang />" />
                                     </h4>
                                     <p class="mbr-text mbr-fonts-style display-7">
                                         <cms:excerpt count='15' ignore='img'>
-                                            <cms:show blog_content/>
+                                            <cms:get "uudis_content_<cms:show k_lang />" />
                                         </cms:excerpt>
                                     </p>
                                 </div>
