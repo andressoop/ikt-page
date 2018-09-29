@@ -25,7 +25,7 @@
                     <div class="container blog-posts">
                         <div class="media-container-row">
                             <div class="title col-md-10">
-                                <h2 class="align-center pb-3 mbr-fonts-style display-2"><a href="<cms:show k_page_link />"><cms:show k_page_title /></a></h2>
+                                <h2 class="align-center pb-3 mbr-fonts-style display-2"><a href="<cms:show_with_lc k_page_link />"><cms:get "uudis_title_<cms:show k_lang />" /></a></h2>
                             </div>
                         </div>
                         <div class="media-container-row">
@@ -37,8 +37,8 @@
                                     <p class="align-right">Posted on <cms:date k_page_date format='%d %B %Y' locale="english" charset="ISO-8859-4" /></p>
                                 </cms:if>
                                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
-                                <cms:excerptHTML count='75' ignore='img'><cms:show blog_content /></cms:excerptHTML>
-                                <a href="<cms:show k_page_link />">
+                                <cms:excerptHTML count='75' ignore='img'><cms:get "uudis_content_<cms:show k_lang />" /></cms:excerptHTML>
+                                <a href="<cms:show_with_lc k_page_link />">
                                     <cms:if k_lang='ee'>
                                         Loe tervet artiklit
                                         <cms:else />
