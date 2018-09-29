@@ -20,13 +20,13 @@
                             </div>
                             <div class="card-box">
                                 <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                                    <cms:show k_page_title/>
+                                    <cms:get "eriala_title_<cms:show k_lang />" />
                                 </h4>
                                 <p class="mbr-text mbr-fonts-style display-7">
                                     <cms:excerpt count='15' ignore='img'>
-                                        <cms:show eriala_content/>
+                                        <cms:get "eriala_content_<cms:show k_lang />" />
                                     </cms:excerpt>
-                                    <a href="<cms:show k_page_link />">
+                                    <a href="<cms:show_with_lc k_page_link />">
                                         <cms:if k_lang='ee'>
                                             Tutvu lähemalt...
                                             <cms:else />
