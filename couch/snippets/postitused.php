@@ -127,7 +127,7 @@
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
                                                 <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day />"><cms:show k_day /></a>
+                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day '&lc=' k_lang />"><cms:show k_day /></a>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>
@@ -157,9 +157,9 @@
                                 <ul>
                                     <cms:archives masterpage='uudised.php'>
                                         <cms:if k_lang='ee'>
-                                            <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
                                             <cms:else />
-                                            <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
+                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
                                         </cms:if>
                                     </cms:archives>
                                 </ul>

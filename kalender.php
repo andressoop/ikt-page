@@ -213,7 +213,7 @@
                                                 <ul class="cal-list">
                                                     <cms:entries limit='5' skip_custom_fields='0'>
                                                         <li>
-                                                            <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id />"
+                                                            <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id '&lc=' k_lang />"
                                                                class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
                                                                title="<cms:get "event_title_<cms:show k_lang />" />">
                                                                 <cms:get "event_title_<cms:show k_lang />" />
