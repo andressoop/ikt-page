@@ -1,56 +1,33 @@
 <?php require_once( 'couch/cms.php' ); ?>
     <cms:embed "header.php" />
+    <cms:template title='Praktika' order="6">
+        <cms:editable name='praktika_title_ee' label="(EST) Lõigu pealkiri" order="1" type='text' />
+        <cms:editable name='praktika_title_en' label="(ENG) Lõigu pealkiri" order="2" type='text' />
+        <cms:editable name='praktika_content_ee' label="(EST) Lõigu tekst" order="3" type='richtext' />
+        <cms:editable name='praktika_content_en' label="(ENG) Lõigu tekst" order="4" type='richtext' />
+    </cms:template>
 
-    <cms:template title='Praktika' />
-
-    <cms:editable name='main_content' label="Praktikapakkumised" type='richtext'>
-    <section class="mbr-section content4 cid-qLBdf21SG5" id="content4-19">
-
-
-
+    <section class="praktika-title">
         <div class="container">
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
-                    <h2 class="align-center pb-3 mbr-fonts-style display-2">Praktikapakkumised</h2>
-
-
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                        <cms:get "praktika_title_<cms:show k_lang />" />
+                    </h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="mbr-section article content12 cid-qLBdC3oald" id="content12-1e">
-
-
+    <section class="praktika-body">
         <div class="container">
             <div class="media-container-row">
                 <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
-                    <div><strong>Noorem tarkvaraarendaja (veebispetsialist)</strong></div><div><strong><br></strong></div><ul>
-                        <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                        <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                        <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                    </ul>
+                    <cms:get "praktika_content_<cms:show k_lang />" />
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="mbr-section article content12 cid-qLBeYTfcvq" id="content12-1f">
-
-
-        <div class="container">
-            <div class="media-container-row">
-                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
-                    <div><strong>Bürootöö</strong></div><div><strong><br></strong></div><ul>
-                        <li><strong>Ettevõte&nbsp;</strong> - Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                        <li><strong>Ettevõte&nbsp;</strong>- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                        <li><strong>Ettevõte</strong>&nbsp;- Pakkumise lühikirjeldus. <a href="http://at13.ikt.khk.ee">Vaata siit!</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    </cms:editable>
 
     <cms:embed "footer.php" />
 <?php COUCH::invoke(); ?>

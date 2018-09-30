@@ -1,25 +1,12 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
 
-    <cms:template title='Erialad'/>
-
-    <section class="erialad_head">
-        <div class="container">
-            <div class="inner-container" style="width: 100%;">
-                <hr class="line" style="width: 25%;">
-                <div class="section-text align-center mbr-fonts-style display-5">
-                    <cms:editable name='eriala_intro' label="Eriala intro" type='richtext'>
-                        Osakonnas õpetavad erialaaineid mitmed kogemustega erialaspetsialistid, õppetöö raames teostavad
-                        õpilased erinevaid erialaprojekte. Muutused IKT valdkonnas on kiired ja eeldavad pidevat
-                        enesetäiendamist. Osakonna tugevuseks on avatus uutele ideedele ja koostöövõrgustik erinevate
-                        Eesti ja Euroopa koolidega.
-                    </cms:editable>
-                </div>
-                <hr class="line" style="width: 25%;">
-            </div>
-        </div>
-    </section>
-
+    <cms:template title='Erialade loend' order="2">
+        <cms:editable name='osakond_tutvustus_title_ee' label="(EST) Osakonna tutvustuse lõigu pealkiri" order="1" type='text' />
+        <cms:editable name='osakond_tutvustus_title_en' label="(ENG) Osakonna tutvustuse lõigu pealkiri" order="2" type='text' />
+        <cms:editable name='osakond_tutvustus_ee' label="(EST) Osakonna tutvustus" order="3" type='richtext' />
+        <cms:editable name='osakond_tutvustus_en' label="(ENG) Osakonna tutvustus" order="4" type='richtext' />
+    </cms:template>
 
     <section class="erialad-list">
 
@@ -33,13 +20,19 @@
                             </div>
                             <div class="card-box">
                                 <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                                    <cms:show k_page_title/>
+                                    <cms:get "eriala_title_<cms:show k_lang />" />
                                 </h4>
                                 <p class="mbr-text mbr-fonts-style display-7">
                                     <cms:excerpt count='15' ignore='img'>
-                                        <cms:show eriala_content/>
+                                        <cms:get "eriala_content_<cms:show k_lang />" />
                                     </cms:excerpt>
-                                    <a href="<cms:show k_page_link />">Tutvu lähemalt...</a>
+                                    <a href="<cms:show_with_lc k_page_link />">
+                                        <cms:if k_lang='ee'>
+                                            Tutvu lähemalt...
+                                            <cms:else />
+                                            Learn more...
+                                        </cms:if>
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -49,14 +42,24 @@
         </div>
     </section>
 
-    <section class="erialad-list">
+    <section class="section-second-title">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                        <cms:get "osakond_tutvustus_title_<cms:show k_lang />" />
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="erialad-section">
         <div class="container">
             <div class="media-container-row">
                 <div class="col-lg-12">
-                    <div class="section-text mbr-fonts-style display-7">
-                        <cms:editable name='eriala_tutvustus' label="Eriala tutvustus" type='richtext'>
-
-                        </cms:editable>
+                    <div class="erialad-section-text mbr-fonts-style display-7">
+                        <cms:get "osakond_tutvustus_<cms:show k_lang />" />
                     </div>
                 </div>
             </div>

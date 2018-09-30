@@ -25,16 +25,26 @@
                     <div class="container blog-posts">
                         <div class="media-container-row">
                             <div class="title col-md-10">
-                                <h2 class="align-center pb-3 mbr-fonts-style display-2"><a href="<cms:show k_page_link />"><cms:show k_page_title /></a></h2>
+                                <h2 class="align-center pb-3 mbr-fonts-style display-2"><a href="<cms:show_with_lc k_page_link />"><cms:get "uudis_title_<cms:show k_lang />" /></a></h2>
                             </div>
                         </div>
                         <div class="media-container-row">
-                            <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+                            <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
-                                <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
+                                <cms:if k_lang='ee'>
+                                    <p class="align-right">Postitatud <cms:date k_page_date format='%d. %B %Y' locale="estonian" charset="ISO-8859-4" /></p>
+                                    <cms:else />
+                                    <p class="align-right">Posted on <cms:date k_page_date format='%d %B %Y' locale="english" charset="ISO-8859-4" /></p>
+                                </cms:if>
                                 <img class="thumb" src="<cms:show blog_image />" alt=""/>
-                                <cms:excerptHTML count='75' ignore='img'><cms:show blog_content /></cms:excerptHTML>
-                                <a href="<cms:show k_page_link />">Loe tervet artiklit</a>
+                                <cms:excerptHTML count='75' ignore='img'><cms:get "uudis_content_<cms:show k_lang />" /></cms:excerptHTML>
+                                <a href="<cms:show_with_lc k_page_link />">
+                                    <cms:if k_lang='ee'>
+                                        Loe tervet artiklit
+                                        <cms:else />
+                                        Read full article
+                                    </cms:if>
+                                </a>
 
                             </div>
                         </div>
@@ -42,18 +52,34 @@
 
                     <cms:if k_paginated_bottom>
                     <!-- Navigeerimisnupud -->
-                    <div class="media-container-row">
-                        <div class="mbr-text col-md-10 mbr-fonts-style display-7">
+                    <div class="container">
+                        <div class="media-container-row">
+                            <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
 
-                            <div class="mbr-section-btn text-center">
-                                <cms:if k_paginate_link_next >
-                                <a href="<cms:show k_paginate_link_next />" class="btn btn-secondary display-4">Vanemad postitused<br></a>
-                                </cms:if>
-                                <cms:if k_paginate_link_prev >
-                                <a href="<cms:show k_paginate_link_prev />" class="btn btn-secondary display-4">Uuemad postitused<br></a>
-                                </cms:if>
+                                <div class="paginate-next">
+                                    <cms:if k_paginate_link_next >
+                                        <a href="<cms:show_with_lc k_paginate_link_next />">
+                                            <cms:if k_lang='ee'>
+                                                Vanemad postitused
+                                                <cms:else />
+                                                Older articles
+                                            </cms:if>
+                                        </a>
+                                    </cms:if>
+                                </div>
+                                <div class="paginate-prev">
+                                    <cms:if k_paginate_link_prev >
+                                        <a href="<cms:show_with_lc k_paginate_link_prev />">
+                                            <cms:if k_lang='ee'>
+                                                Uuemad postitused
+                                                <cms:else />
+                                                Newer articles
+                                            </cms:if>
+                                        </a>
+                                    </cms:if>
+                                </div>
+
                             </div>
-
                         </div>
                     </div>
                     </cms:if>
@@ -66,16 +92,26 @@
 
                 <!--  Kalender  -->
                 <div class="media-container-row">
-                    <!--<cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='events.php' show_future_entries='1'>
+                    <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='kalender.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
-                                <th><a href="<cms:concat k_page_link '?cal=' k_prev_calendar_date />"> << </a></th>
-                                <th colspan="5"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></th>
-                                <th><a href="<cms:concat k_page_link '?cal=' k_next_calendar_date />"> >> </a></th>
+                                <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></th>
+                                <th colspan="5">
+                                    <cms:if k_lang='ee'>
+                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a>
+                                        <cms:else />
+                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" /></a>
+                                    </cms:if>
+                                </th>
+                                <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></th>
                             </tr>
                             <tr>
                                 <cms:repeat count='7'>
-                                    <td class="months_heading"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></td>
+                                    <cms:if k_lang='ee'>
+                                        <td class="months_heading"><cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/></td>
+                                        <cms:else />
+                                        <td class="months_heading"><cms:zebra 'M' 'T' 'W' 'T' 'F' 'S' 'S'/></td>
+                                    </cms:if>
                                 </cms:repeat>
                             </tr>
 
@@ -91,7 +127,7 @@
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
                                                 <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:link masterpage='events.php' year=k_year month=k_month day=k_day />"><cms:show k_day /></a>
+                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day '&lc=' k_lang />"><cms:show k_day /></a>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>
@@ -104,17 +140,27 @@
                             </cms:weeks>
                         </table>
                     </cms:calendar>
-                </div>-->
+                </div>
 
                 <!--  Postituste arhiiv  -->
                 <div class="container">
                     <div class="media-container-row">
                         <div class="mbr-textmbr-fonts-style display-7">
-                            <div class="mbr-text counter-container mbr-fonts-style display-7">
-                                <div class="sidebar-title">Postituste arhiiv</div>
+                            <div class="mbr-text mbr-fonts-style display-7">
+                                <div class="sidebar-title">
+                                    <cms:if k_lang='ee'>
+                                        Postituste arhiiv
+                                        <cms:else />
+                                        News archive
+                                    </cms:if>
+                                </div>
                                 <ul>
                                     <cms:archives masterpage='uudised.php'>
-                                        <li class="list-group"><a href="<cms:show k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                        <cms:if k_lang='ee'>
+                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                            <cms:else />
+                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
+                                        </cms:if>
                                     </cms:archives>
                                 </ul>
                             </div>

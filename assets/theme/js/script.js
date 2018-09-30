@@ -970,28 +970,29 @@ function goBack(){
 }
 
 
-// Floating contact form button
+// Floating contact form
 $(function() {
     $(".float-button").click(function() {
         $("#contact-form").modal('show');
     });
 });
 
-// Floating contact form submission disable if there are invalid fields
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
+$(document).ready(function() {
+    $("#contact-form-cms").submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data: $(this).serialize(),
+            success: function(data) {
+                $("#contact-form-cms").html($(data).find("#contact-form-cms").children());
+            }
         });
-    }, false);
-})();
+    });
+});
+
+
+// Calendar
+$(document).ready(function() {
+    $("#calendar-event").modal('show');
+});

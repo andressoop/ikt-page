@@ -30,7 +30,7 @@
     // -4.5   Venezuela (UTC-04:30)
     // -6     United States (Central Time) (UTC-06:00)
     // -8     United States (Pacific Time) (UTC-08:00)
-    define( 'K_GMT_OFFSET', +5.5 );
+    define( 'K_GMT_OFFSET', +3 );
 
     // 3.
     // Define the charset used by your site. If in any doubt, leave the default utf-8.
@@ -88,11 +88,11 @@
 
     // 13.
     // Your Email address. Will be used in contact forms.
-    define( 'K_EMAIL_TO', 'youremail@gmail.com' );
+    define( 'K_EMAIL_TO', 'andres.soop@khk.ee' );
 
     // 14.
     // Will be used as the sender of messages delivered by contact forms to the address above.
-    define( 'K_EMAIL_FROM', 'contact@yourdomain.com' );
+    define( 'K_EMAIL_FROM', 'info@khk.ee' );
 
     // 15.
     // By default the inbuilt php function 'mail()' is used to deliver messages.
