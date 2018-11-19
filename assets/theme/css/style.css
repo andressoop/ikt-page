@@ -1407,6 +1407,7 @@ body {
 .header-menu .nav-link:focus {
   outline: none;
 }
+.
 .header-menu .btn {
   padding: 0.4rem 1.5rem;
   display: inline-flex;
@@ -1755,6 +1756,7 @@ body {
   flex-basis: auto;
 }
 .header-menu .nav-link:hover,
+.header-menu .text-active,
 .header-menu .dropdown-item:hover {
   color: #ffe600 !important;
 }
