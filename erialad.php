@@ -63,6 +63,11 @@
                     </div>
                 </div>
             </div>
+            <div class="media-container-row">
+                <div class="col-lg-12">
+                    <div class="google-map"><iframe frameborder="0" style="border:0;width:100%;height:360px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJR-nJ6Ec360YRyJmdPEJhxMs" allowfullscreen=""></iframe></div>
+                </div>
+            </div>
         </div>
     </section>
 

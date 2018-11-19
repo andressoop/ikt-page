@@ -3,12 +3,17 @@
 
             <div class="container">
                 <div class="media-container-row content mbr-white">
-                    <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <div class="col-12 col-md-4 mbr-fonts-style display-7">
                         <p class="mbr-text">
                             <cms:get_custom_field "address_<cms:show k_lang />" masterpage='globals.php' />
                         </p>
                     </div>
-                    <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <div class="col-12 col-md-4 mbr-fonts-style display-7">
+                        <p class="mbr-text">
+                            <cms:get_custom_field "contact_<cms:show k_lang />" masterpage='globals.php' />
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 mbr-fonts-style display-7">
                         <p class="mbr-text">
                             <cms:get_custom_field "links_<cms:show k_lang />" masterpage='globals.php' />
                         </p>
@@ -50,9 +55,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJR-nJ6Ec360YRyJmdPEJhxMs" allowfullscreen=""></iframe></div>
-                    </div>
                 </div>
                 <div class="footer-lower">
                     <div class="media-container-row">
@@ -64,9 +66,9 @@
                         <div class="col-sm-12 copyright">
                             <p class="mbr-text mbr-fonts-style display-7">
                                 <cms:if k_lang='ee'>
-                                © Aasta Tegija 2018 veebimeistrite võidutöö, mille valmistasid <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>.
+                                © Aasta Tegija 2018, <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> ja <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>
                                 <cms:else />
-                                © Created by the winners of the Professional Webmasters Competition 2018, <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> and <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>.
+                                © Professional Webmasters Competition 2018, <a href="https://www.linkedin.com/in/sandraonne/">Sandra Õnne</a> and <a href="https://www.linkedin.com/in/andressoop/">Andres Soop</a>
                                 </cms:if>
                             </p>
                         </div>
