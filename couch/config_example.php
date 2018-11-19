@@ -39,10 +39,10 @@
     // MySQL settings. You need to get this info from your web host.
     // 4.
     // Name of the database
-    define( 'K_DB_NAME', 'ikt' );
+    define( 'K_DB_NAME', '' );
     // 5.
     // Database username
-    define( 'K_DB_USER', 'root' );
+    define( 'K_DB_USER', '' );
     // 6.
     // Database password
     define( 'K_DB_PASSWORD', '' );
@@ -88,11 +88,11 @@
 
     // 13.
     // Your Email address. Will be used in contact forms.
-    define( 'K_EMAIL_TO', 'andres.soop@khk.ee' );
+    define( 'K_EMAIL_TO', '' );
 
     // 14.
     // Will be used as the sender of messages delivered by contact forms to the address above.
-    define( 'K_EMAIL_FROM', 'info@khk.ee' );
+    define( 'K_EMAIL_FROM', '' );
 
     // 15.
     // By default the inbuilt php function 'mail()' is used to deliver messages.
@@ -104,7 +104,7 @@
     // Google Maps API Key.
     // You'll have to get one for your site from 'http://code.google.com/apis/maps/'
     // if your site makes use of Google maps.
-    define( 'K_GOOGLE_KEY', 'ABQIAAAAD7z_FToS5NSqosnG9No1ABQYPrehWcZJH1ec0SZqipYFbK_nfRT1ryCGKzl5KGpFG3y5jyPe_uClVg' );
+    define( 'K_GOOGLE_KEY', '' );
 
     // Set the following if you use PayPal buttons to sell products.
     // 17.
@@ -157,8 +157,8 @@
     // Google reCAPTCHA API Keys.
     // To use this captcha service, you need to sign up for an API key pair for your site.
     // Please visit 'https://www.google.com/recaptcha/admin' to get the keys and enter them below.
-    define( 'K_RECAPTCHA_SITE_KEY', '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI' );
-    define( 'K_RECAPTCHA_SECRET_KEY', '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe' );
+    define( 'K_RECAPTCHA_SITE_KEY', '' );
+    define( 'K_RECAPTCHA_SECRET_KEY', '' );
 
     // 99.
     // VERY IMPORTANT!
