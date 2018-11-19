@@ -1,3 +1,13 @@
+<!-- Event popup -->
+    <div id="calendar-event" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content-popup">
+                <div class="modal-body-popup">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- // Event popup -->
 
 <section class="mbr-section content4 eriala-head" id="content4-16">
 
@@ -15,6 +25,7 @@
 
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12">
+
                 <!--   Postitused  -->
                 <cms:pages masterpage='uudised.php'
                            start_on=k_archive_date
@@ -50,8 +61,8 @@
                         </div>
                     </div>
 
-                    <cms:if k_paginated_bottom>
                     <!-- Navigeerimisnupud -->
+                    <cms:if k_paginated_bottom>
                     <div class="container">
                         <div class="media-container-row">
                             <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
@@ -98,9 +109,9 @@
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></th>
                                 <th colspan="5">
                                     <cms:if k_lang='ee'>
-                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a>
+                                        <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
                                         <cms:else />
-                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" /></a>
+                                        <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
                                     </cms:if>
                                 </th>
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></th>
@@ -127,7 +138,9 @@
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
                                                 <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day '&lc=' k_lang />"><cms:show k_day /></a>
+                                                    <cms:entries limit='1' skip_custom_fields='1'>
+                                                        <a href="<cms:show k_page_link />" class="calendar-day"><cms:show k_day /></a>
+                                                    </cms:entries>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>

@@ -991,8 +991,7 @@ $(document).ready(function() {
     });
 });
 
-
-// Calendar
-$(document).ready(function() {
-    $("#calendar-event").modal('show');
+$('.calendar-day').on('click', function(e){
+    e.preventDefault();
+    $('#calendar-event').modal('show').find('.modal-body-popup').load($(this).attr('href'));
 });
