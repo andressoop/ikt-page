@@ -20,7 +20,7 @@
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
-                           limit='10' >
+                           limit='5' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">
@@ -60,9 +60,9 @@
                                     <cms:if k_paginate_link_next >
                                         <a href="<cms:show_with_lc k_paginate_link_next />">
                                             <cms:if k_lang='ee'>
-                                                Vanemad postitused
+                                                << Vanemad postitused
                                                 <cms:else />
-                                                Older articles
+                                                << Older articles
                                             </cms:if>
                                         </a>
                                     </cms:if>
@@ -71,9 +71,9 @@
                                     <cms:if k_paginate_link_prev >
                                         <a href="<cms:show_with_lc k_paginate_link_prev />">
                                             <cms:if k_lang='ee'>
-                                                Uuemad postitused
+                                                Uuemad postitused >>
                                                 <cms:else />
-                                                Newer articles
+                                                Newer articles >>
                                             </cms:if>
                                         </a>
                                     </cms:if>
@@ -155,7 +155,7 @@
                                     </cms:if>
                                 </div>
                                 <ul>
-                                    <cms:archives masterpage='uudised.php'>
+                                    <cms:archives masterpage='uudised.php' limit='12'>
                                         <cms:if k_lang='ee'>
                                             <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
                                             <cms:else />
