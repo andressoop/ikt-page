@@ -10,7 +10,6 @@
     </cms:template>
 
     <section class="mbr-section content4 eriala-head" id="content4-16">
-
         <div class="container">
             <div class="media-container-row">
                 <div class="title col-12 col-md-8">
