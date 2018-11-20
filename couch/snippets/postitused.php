@@ -102,7 +102,7 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
 
                 <!--  Kalender  -->
-                <div class="media-container-row">
+                <div class="media-container-sidebar">
                     <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='kalender.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
@@ -164,7 +164,7 @@
 
                 <!--  Postituste arhiiv  -->
                 <div class="container">
-                    <div class="media-container-row">
+                    <div class="media-container-sidebar">
                         <div class="mbr-textmbr-fonts-style display-7">
                             <div class="mbr-text mbr-fonts-style display-7">
                                 <div class="sidebar-title">
