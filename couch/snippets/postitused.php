@@ -137,10 +137,17 @@
 
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
-                                                <td class='entries <cms:show tdclass />' >
-                                                    <cms:entries limit='1' skip_custom_fields='1'>
-                                                        <a href="<cms:show k_page_link />" class="calendar-day"><cms:show k_day /></a>
-                                                    </cms:entries>
+                                                <td class='dropdown entries <cms:show tdclass />' >
+                                                    <cms:show k_day />
+                                                    <ul class="cal-list dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <cms:entries limit='5' skip_custom_fields='1'>
+                                                            <li>
+                                                                <a href="<cms:show k_page_link />" class="calendar-day event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white">
+                                                                    <cms:show k_page_title />
+                                                                </a>
+                                                            </li>
+                                                        </cms:entries>
+                                                    </ul>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>

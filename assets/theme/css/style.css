@@ -3182,7 +3182,13 @@ table.calendar_small td.entries.today a{
 .close-event:after {
   transform: rotate(-45deg);
 }
-
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  margin-top: -1px;
+}
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
 /* Navigation buttons */
 .paginate-next {
   float: left;
