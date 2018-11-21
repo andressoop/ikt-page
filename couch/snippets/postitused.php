@@ -108,11 +108,11 @@
                             <tr>
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></th>
                                 <th colspan="5">
-                                    <cms:if k_lang='ee'>
-                                        <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
-                                        <cms:else />
-                                        <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
-                                    </cms:if>
+                                        <cms:if k_lang='ee'>
+                                            <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
+                                            <cms:else />
+                                            <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
+                                        </cms:if>
                                 </th>
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></th>
                             </tr>
@@ -165,26 +165,23 @@
                 <!--  Postituste arhiiv  -->
                 <div class="container">
                     <div class="media-container-sidebar">
-                        <div class="mbr-textmbr-fonts-style display-7">
-                            <div class="mbr-text mbr-fonts-style display-7">
-                                <div class="sidebar-title">
-                                    <cms:if k_lang='ee'>
-                                        Postituste arhiiv
-                                        <cms:else />
-                                        News archive
-                                    </cms:if>
-                                </div>
-                                <ul>
-                                    <cms:archives masterpage='uudised.php' limit='12'>
-                                        <cms:if k_lang='ee'>
-                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
-                                            <cms:else />
-                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
-                                        </cms:if>
-                                    </cms:archives>
-                                </ul>
+                        <div class="mbr-text mbr-fonts-style display-7">
+                            <div class="sidebar-title">
+                                <cms:if k_lang='ee'>
+                                    Postituste arhiiv
+                                    <cms:else />
+                                    News archive
+                                </cms:if>
                             </div>
-
+                            <ul>
+                                <cms:archives masterpage='uudised.php' limit='12'>
+                                    <cms:if k_lang='ee'>
+                                        <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                        <cms:else />
+                                        <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
+                                    </cms:if>
+                                </cms:archives>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -69,25 +69,19 @@
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="container">
                         <div class="media-container-sidebar">
-                            <div class="mbr-textmbr-fonts-style display-7">
-                                <div class="mbr-text mbr-fonts-style display-7">
-                                    <div class="sidebar-title">
-                                        <cms:if k_lang='ee'>
-                                            Praktika
-                                            <cms:else />
-                                            Internship
-                                        </cms:if>
-                                    </div>
-                                    <ul>
-                                        <cms:pages masterpage='praktika.php'>
-                                            <cms:if k_lang='ee'>
-                                                <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "praktikad_title_<cms:show k_lang />" /></a></li>
-                                                <cms:else />
-                                                <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "praktikad_title_<cms:show k_lang />" /></a></li>
-                                            </cms:if>
-                                        </cms:pages>
-                                    </ul>
+                            <div class="mbr-text mbr-fonts-style display-7">
+                                <div class="sidebar-title">
+                                    <cms:get_custom_field "praktika_<cms:show k_lang />" masterpage='translations.php' />
                                 </div>
+                                <ul>
+                                    <cms:pages masterpage='praktika.php'>
+                                        <cms:if k_lang='ee'>
+                                            <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "praktikad_title_<cms:show k_lang />" /></a></li>
+                                            <cms:else />
+                                            <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "praktikad_title_<cms:show k_lang />" /></a></li>
+                                        </cms:if>
+                                    </cms:pages>
+                                </ul>
                             </div>
                         </div>
                     </div>
