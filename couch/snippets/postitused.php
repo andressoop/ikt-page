@@ -173,7 +173,7 @@
                                     News archive
                                 </cms:if>
                             </div>
-                            <ul>
+                            <ul class="sidebar-menu">
                                 <cms:archives masterpage='uudised.php' limit='12'>
                                     <cms:if k_lang='ee'>
                                         <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>

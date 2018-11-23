@@ -80,7 +80,7 @@
                                 <div class="sidebar-title">
                                     Keskhariduse baasil
                                 </div>
-                                <ul>
+                                <ul class="sidebar-menu">
                                     <cms:pages folder='keskharidus'>
                                         <cms:if k_lang='ee'>
                                             <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "eriala_title_<cms:show k_lang />" /></a></li>
@@ -92,7 +92,7 @@
                                 <div class="sidebar-title">
                                     Põhihariduse baasil
                                 </div>
-                                <ul>
+                                <ul class="sidebar-menu">
                                     <cms:pages folder='pohiharidus'>
                                             <cms:if k_lang='ee'>
                                                 <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "eriala_title_<cms:show k_lang />" /></a></li>
@@ -109,9 +109,6 @@
             </div>
         </div>
     </section>
-
-<!--  !!!!!!!!!!!!!!!!!!!!!  -->
-
 
     <cms:embed "footer.php" />
 <?php COUCH::invoke(); ?>

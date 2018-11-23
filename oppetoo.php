@@ -73,7 +73,7 @@
                                 <div class="sidebar-title">
                                     <cms:get_custom_field "oppetoo_<cms:show k_lang />" masterpage='translations.php' />
                                 </div>
-                                <ul>
+                                <ul class="sidebar-menu">
                                     <cms:pages masterpage='oppetoo.php'>
                                         <cms:if k_lang='ee'>
                                             <li class="list-group"><a href="<cms:show_with_lc k_page_link />"><cms:get "oppetoo_title_<cms:show k_lang />" /></a></li>
