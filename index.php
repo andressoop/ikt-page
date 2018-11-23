@@ -1,14 +1,14 @@
 <?php require_once('couch/cms.php'); ?>
     <cms:embed "header.php" />
     <cms:template title='Avaleht' order="1">
-        <cms:editable name='main_title_ee' label="(EST) Lehe pealkiri / hüüdlause" order="1" type='text' />
-        <cms:editable name='main_title_en' label="(ENG) Lehe pealkiri / hüüdlause" order="2" type='text' />
+        <cms:editable name='main_title_ee' label="(EST) Avalehe pealkiri / hüüdlause" order="1" type='text' />
+        <cms:editable name='main_title_en' label="(ENG) Avalehe pealkiri / hüüdlause" order="2" type='text' />
 
         <cms:editable name="group_main_button" label="Pealkirja nupp" desc="Lehe hüüdlause all oleva nupu seadistamine" order="3" type="group"/>
             <cms:editable name="main_button_text_ee" label="(EST) Nupu tekst" group="group_main_button" order="1" type="text" />
             <cms:editable name="main_button_text_en" label="(ENG) Nupu tekst" group="group_main_button" order="2" type="text" />
-            <cms:editable name="main_button_link_ee" label="(EST) Nupu URL" group="group_main_button" order="3" type="text" />
-            <cms:editable name="main_button_link_en" label="(ENG) Nupu URL" group="group_main_button" order="4" type="text" />
+            <cms:editable name="main_button_link_ee" label="(EST) Leht, kuhu eestikeelne nupp suunab" desc="näiteks: erialad.php" group="group_main_button" order="3" type="text" />
+            <cms:editable name="main_button_link_en" label="(ENG) Leht, kuhu ingliskeelne nupp suunab" desc="näiteks: erialad.php" group="group_main_button" order="4" type="text" />
 
         <cms:editable name='osakonna_intro_ee' label="(EST) Osakonna lühike tutvustus" order="4" type='richtext' />
         <cms:editable name='osakonna_intro_en' label="(ENG) Osakonna lühike tutvustus" order="5" type='richtext' />

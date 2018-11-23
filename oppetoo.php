@@ -2,7 +2,7 @@
     <cms:embed "header.php" />
 
     <cms:template title='Õppetöö' order="7" clonable='1'>
-        <cms:editable name="group_oppetoo" label="Õppetöö alaleht" type="group"/>
+        <cms:editable name="group_oppetoo" label="Õppetöö alaleht" desc="Erialad järjestatakse publitseerimise kuupäeva järjekorras, kuupäeva muutmiseks kasuta 'Advanced Settings'" type="group"/>
             <cms:editable name='oppetoo_title_ee' label="(EST) Pealkiri" group="group_oppetoo" order="1" type='text' />
             <cms:editable name='oppetoo_title_en' label="(ENG) Pealkiri" group="group_oppetoo" order="2" type='text' />
             <cms:editable name='oppetoo_content_ee' label="(EST) Sisu" group="group_oppetoo" order="3" type='richtext' />

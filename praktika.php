@@ -2,7 +2,7 @@
     <cms:embed "header.php" />
 
     <cms:template title='Praktika' order="6" clonable="1">
-        <cms:editable name="group_praktika" label="Praktika alaleht" type="group"/>
+        <cms:editable name="group_praktika" label="Praktika alaleht" desc="Erialad järjestatakse publitseerimise kuupäeva järjekorras, kuupäeva muutmiseks kasuta 'Advanced Settings'" type="group"/>
             <cms:editable name='praktikad_title_ee' label="(EST) Pealkiri" group="group_praktika" order="1" type='text' />
             <cms:editable name='praktikad_title_en' label="(ENG) Pealkiri" group="group_praktika" order="2" type='text' />
             <cms:editable name='praktikad_content_ee' label="(EST) Sisu" group="group_praktika" order="3" type='richtext' />

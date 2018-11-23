@@ -39,9 +39,11 @@
             validator_msg='regex=Incorrect date format'
         />
 
-        <cms:editable name='image' group="group_event" order="9"
-            label='Pilt'
-            type='image'
+        <cms:editable name='image' group='group_event' order='9' label='Pilt' desc='Pildi suurus kohandatakse automaatselt tavalise foto 3:2 (720x480) mõõtmetesse'
+                      crop='1'
+                      width='720'
+                      height='480'
+                      type='image'
         />
 
     </cms:template>

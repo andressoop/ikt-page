@@ -2,15 +2,15 @@
     <cms:embed "header.php" />
 
     <cms:template title='Erialad' order="3" clonable='1'>
-        <cms:editable name="group_erialad" label="Eriala tutvustus" type="group"/>
+        <cms:editable name="group_erialad" label="Eriala tutvustus" desc="Erialad järjestatakse publitseerimise kuupäeva järjekorras, kuupäeva muutmiseks kasuta 'Advanced Settings'" type="group"/>
         <cms:editable name='eriala_title_ee' label="(EST) Eriala nimetus" group="group_erialad" order="1" type='text'/>
         <cms:editable name='eriala_title_en' label="(ENG) Eriala nimetus" group="group_erialad" order="2" type='text'/>
         <cms:editable name='eriala_content_ee' label="(EST) Eriala kirjeldus" group="group_erialad" order="3" type='richtext'/>
         <cms:editable name='eriala_content_en' label="(ENG) Eriala kirjeldus" group="group_erialad" order="4" type='richtext'/>
-        <cms:editable name='eriala_image' group="group_erialad" order="5" label="Pilt"
+        <cms:editable name='eriala_image' group="group_erialad" order="5" label="Pilt" desc="Pildi suurus kohandatakse automaatselt tavalise foto 3:2 (720x480) mõõtmetesse"
                       crop='1'
-                      width='640'
-                      height='400'
+                      width='720'
+                      height='480'
                       type='image'
         />
     </cms:template>
