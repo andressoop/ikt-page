@@ -1,3 +1,13 @@
+<!-- Event popup -->
+    <div id="calendar-event" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content-popup">
+                <div class="modal-body-popup">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- // Event popup -->
 
 <section class="mbr-section content4 eriala-head" id="content4-16">
 
@@ -15,12 +25,13 @@
 
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-12">
+
                 <!--   Postitused  -->
                 <cms:pages masterpage='uudised.php'
                            start_on=k_archive_date
                            stop_before=k_next_archive_date
                            paginate='1'
-                           limit='10' >
+                           limit='5' >
 
                     <div class="container blog-posts">
                         <div class="media-container-row">
@@ -50,8 +61,8 @@
                         </div>
                     </div>
 
-                    <cms:if k_paginated_bottom>
                     <!-- Navigeerimisnupud -->
+                    <cms:if k_paginated_bottom>
                     <div class="container">
                         <div class="media-container-row">
                             <div class="mbr-text col-md-10 mbr-fonts-style display-7 blog-article">
@@ -60,9 +71,9 @@
                                     <cms:if k_paginate_link_next >
                                         <a href="<cms:show_with_lc k_paginate_link_next />">
                                             <cms:if k_lang='ee'>
-                                                Vanemad postitused
+                                                << Vanemad postitused
                                                 <cms:else />
-                                                Older articles
+                                                << Older articles
                                             </cms:if>
                                         </a>
                                     </cms:if>
@@ -71,9 +82,9 @@
                                     <cms:if k_paginate_link_prev >
                                         <a href="<cms:show_with_lc k_paginate_link_prev />">
                                             <cms:if k_lang='ee'>
-                                                Uuemad postitused
+                                                Uuemad postitused >>
                                                 <cms:else />
-                                                Newer articles
+                                                Newer articles >>
                                             </cms:if>
                                         </a>
                                     </cms:if>
@@ -91,17 +102,17 @@
             <div class="col-lg-3 col-md-3 col-sm-12">
 
                 <!--  Kalender  -->
-                <div class="media-container-row">
+                <div class="media-container-sidebar">
                     <cms:calendar date="<cms:gpc 'cal' />" week_starts='1' masterpage='kalender.php' show_future_entries='1'>
                         <table class="calendar_small">
                             <tr>
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></th>
                                 <th colspan="5">
-                                    <cms:if k_lang='ee'>
-                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" /></a>
-                                        <cms:else />
-                                        <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&lc=' k_lang />" class="calendar-link"><cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" /></a>
-                                    </cms:if>
+                                        <cms:if k_lang='ee'>
+                                            <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
+                                            <cms:else />
+                                            <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
+                                        </cms:if>
                                 </th>
                                 <th><a href="<cms:concat masterpage='uudised.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></th>
                             </tr>
@@ -126,8 +137,17 @@
 
                                         <cms:if k_position='current_month' >
                                             <cms:if k_count_entries >
-                                                <td class='entries <cms:show tdclass />' >
-                                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' year=k_year '-' month=k_month '-' day=k_day '&lc=' k_lang />"><cms:show k_day /></a>
+                                                <td class='dropdown entries <cms:show tdclass />' >
+                                                    <cms:show k_day />
+                                                    <ul class="cal-list dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <cms:entries limit='5' skip_custom_fields='1'>
+                                                            <li>
+                                                                <a href="<cms:show k_page_link />" class="calendar-day event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white">
+                                                                    <cms:show k_page_title />
+                                                                </a>
+                                                            </li>
+                                                        </cms:entries>
+                                                    </ul>
                                                 </td>
                                                 <cms:else />
                                                 <td class='<cms:show tdclass />' ><cms:show k_day /></td>
@@ -144,27 +164,24 @@
 
                 <!--  Postituste arhiiv  -->
                 <div class="container">
-                    <div class="media-container-row">
-                        <div class="mbr-textmbr-fonts-style display-7">
-                            <div class="mbr-text mbr-fonts-style display-7">
-                                <div class="sidebar-title">
-                                    <cms:if k_lang='ee'>
-                                        Postituste arhiiv
-                                        <cms:else />
-                                        News archive
-                                    </cms:if>
-                                </div>
-                                <ul>
-                                    <cms:archives masterpage='uudised.php'>
-                                        <cms:if k_lang='ee'>
-                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
-                                            <cms:else />
-                                            <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
-                                        </cms:if>
-                                    </cms:archives>
-                                </ul>
+                    <div class="media-container-sidebar">
+                        <div class="mbr-text mbr-fonts-style display-7">
+                            <div class="sidebar-title">
+                                <cms:if k_lang='ee'>
+                                    Postituste arhiiv
+                                    <cms:else />
+                                    News archive
+                                </cms:if>
                             </div>
-
+                            <ul class="sidebar-menu">
+                                <cms:archives masterpage='uudised.php' limit='12'>
+                                    <cms:if k_lang='ee'>
+                                        <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="estonian" charset="ISO-8859-4" /></a></li>
+                                        <cms:else />
+                                        <li class="list-group"><a href="<cms:show_with_lc k_archive_link />"><cms:date k_archive_date format='%Y %B' locale="english" charset="ISO-8859-4" /></a></li>
+                                    </cms:if>
+                                </cms:archives>
+                            </ul>
                         </div>
                     </div>
                 </div>

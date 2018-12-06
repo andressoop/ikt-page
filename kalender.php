@@ -1,5 +1,4 @@
 <?php require_once( 'couch/cms.php' ); ?>
-    <cms:embed "header.php" />
 
     <cms:template title='Kalender' order="5" clonable='1'>
         <cms:editable name="group_event" label="Ürituse info" type="group"/>
@@ -40,16 +39,17 @@
             validator_msg='regex=Incorrect date format'
         />
 
-        <cms:editable name='image' group="group_event" order="9"
-            label='Pilt'
-            type='image'
+        <cms:editable name='image' group='group_event' order='9' label='Pilt' desc='Pildi suurus kohandatakse automaatselt tavalise foto 3:2 (720x480) mõõtmetesse'
+                      crop='1'
+                      width='720'
+                      height='480'
+                      type='image'
         />
 
     </cms:template>
 
     <!-- Event's information-->
-    <cms:if k_is_page >
-        <div id="calendar-event" class="modal fade" role="dialog">
+        <div id="calendar-event" role="dialog">
             <div class="modal-dialog modal-md">
                 <div class="modal-content">
                     <div class="modal-header justify-content-center">
@@ -90,167 +90,5 @@
                 </div>
             </div>
         </div>
-    </cms:if>
 
-   
-    <section class="calendar-container">
-        <div class="container">
-            <div class="media-container-row">
-
-                <cms:calendar date="<cms:gpc 'cal' />" masterpage='kalender.php' week_starts='1' show_future_entries='1'>
-                    <div class="container-fluid calendar_big">
-                        <header>
-                            <div class="row p-1 d-none d-sm-flex">
-                                <span class="col-sm p-1 text-center"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a></span>
-                                <h4 class="col-sm p-1 mb-4 text-center">
-                                    <cms:if k_lang='ee'>
-                                        <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
-                                        <cms:else />
-                                        <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
-                                    </cms:if>
-                                </h4>
-                                <span class="col-sm p-1 text-center"><a href="<cms:concat masterpage='kalender.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a></span>
-                            </div>
-                            <div class="col d-sm-none">
-                                <h5 class="col-sm p-1 text-center">
-                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' k_prev_calendar_date '&lc=' k_lang />"> << </a>
-                                    <cms:if k_lang='ee'>
-                                        <cms:date k_calendar_date format='%B %Y' locale="estonian" charset="ISO-8859-4" />
-                                        <cms:else />
-                                        <cms:date k_calendar_date format='%B %Y' locale="english" charset="ISO-8859-4" />
-                                    </cms:if>
-                                    <a href="<cms:concat masterpage='kalender.php' '?cal=' k_next_calendar_date '&lc=' k_lang />"> >> </a>
-                                </h5>
-                            </div>
-                            <div class="row d-none d-sm-flex p-1 bg-darkblue text-white">
-                                <cms:repeat count='7'>
-                                    <h5 class="col-sm p-1 text-center">
-                                        <cms:if k_lang='ee'>
-                                            <cms:zebra 'E' 'T' 'K' 'N' 'R' 'L' 'P'/>
-                                            <cms:else />
-                                            <cms:zebra 'M' 'T' 'W' 'T' 'F' 'S' 'S'/>
-                                        </cms:if>
-                                    </h5>
-                                </cms:repeat>
-                            </div>
-                        </header>
-
-                        <div class="row border border-right-0 border-bottom-0 calendar_big_days">
-                            <cms:weeks>
-                                <cms:days >
-                                    <cms:if k_timeline_position='present'>
-                                        <cms:set calclass='cal-today' />
-                                    <cms:else />
-                                        <cms:set calclass='' />
-                                    </cms:if>
-
-                                    <cms:if k_lang='ee'>
-                                        <cms:if k_day_of_week='0'>
-                                            <cms:set day_of_week='Pühapäev' />
-                                            <cms:else />
-                                            <cms:if k_day_of_week='1'>
-                                                <cms:set day_of_week='Esmaspäev' />
-                                                <cms:else />
-                                                <cms:if k_day_of_week='2'>
-                                                    <cms:set day_of_week='Teisipäev' />
-                                                    <cms:else />
-                                                    <cms:if k_day_of_week='3'>
-                                                        <cms:set day_of_week='Kolmapäev' />
-                                                        <cms:else />
-                                                        <cms:if k_day_of_week='4'>
-                                                            <cms:set day_of_week='Neljapäev' />
-                                                            <cms:else />
-                                                            <cms:if k_day_of_week='5'>
-                                                                <cms:set day_of_week='Reede' />
-                                                                <cms:else />
-                                                                <cms:if k_day_of_week='6'>
-                                                                    <cms:set day_of_week='Laupäev' />
-                                                                </cms:if>
-                                                            </cms:if>
-                                                        </cms:if>
-                                                    </cms:if>
-                                                </cms:if>
-                                            </cms:if>
-                                        </cms:if>
-                                    <cms:else />
-                                        <cms:if k_day_of_week='0'>
-                                            <cms:set day_of_week='Sunday' />
-                                            <cms:else />
-                                            <cms:if k_day_of_week='1'>
-                                                <cms:set day_of_week='Monday' />
-                                                <cms:else />
-                                                <cms:if k_day_of_week='2'>
-                                                    <cms:set day_of_week='Tuesday' />
-                                                    <cms:else />
-                                                    <cms:if k_day_of_week='3'>
-                                                        <cms:set day_of_week='Wednesday' />
-                                                        <cms:else />
-                                                        <cms:if k_day_of_week='4'>
-                                                            <cms:set day_of_week='Thursday' />
-                                                            <cms:else />
-                                                            <cms:if k_day_of_week='5'>
-                                                                <cms:set day_of_week='Friday' />
-                                                                <cms:else />
-                                                                <cms:if k_day_of_week='6'>
-                                                                    <cms:set day_of_week='Saturday' />
-                                                                </cms:if>
-                                                            </cms:if>
-                                                        </cms:if>
-                                                    </cms:if>
-                                                </cms:if>
-                                            </cms:if>
-                                        </cms:if>
-                                    </cms:if>
-
-                                    <cms:if k_position='current_month' >
-                                        <cms:if k_count_entries >
-                                            <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate <cms:show calclass />">
-                                                <h5 class="row align-items-center">
-                                                    <span class="date col-1"><cms:show k_day /></span>
-                                                    <small class="col d-sm-none text-center text-muted"><cms:show day_of_week /></small>
-                                                    <span class="col-1"></span>
-                                                </h5>
-                                                <ul class="cal-list">
-                                                    <cms:entries limit='5' skip_custom_fields='0'>
-                                                        <li>
-                                                            <a href="<cms:concat masterpage='kalender.php' '?cal=' k_calendar_date '&p=' k_page_id '&lc=' k_lang />"
-                                                               class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
-                                                               title="<cms:get "event_title_<cms:show k_lang />" />">
-                                                                <cms:get "event_title_<cms:show k_lang />" />
-                                                            </a>
-                                                        </li>
-                                                    </cms:entries>
-                                                </ul>
-                                            </div>
-                                        <cms:else />
-                                            <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate <cms:show calclass />">
-                                                <h5 class="row align-items-center">
-                                                    <span class="date col-1"><cms:show k_day /></span>
-                                                    <small class="col d-sm-none text-center text-muted"><cms:show day_of_week /></small>
-                                                    <span class="col-1"></span>
-                                                </h5>
-                                            </div>
-                                        </cms:if>
-                                    <cms:else />
-                                        <cms:set calclass='d-none d-sm-inline-block bg-light text-muted' />
-                                        <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none <cms:show calclass />">
-                                            <h5 class="row align-items-center">
-                                                <span class="date col-1"><cms:show k_day /></span>
-                                            </h5>
-                                        </div>
-                                    </cms:if>
-
-                                </cms:days>
-                                <div class="w-100"></div>
-                            </cms:weeks>
-                        </div>
-
-                    </div>
-                </cms:calendar>
-
-            </div>
-        </div>
-    </section>
-
-    <cms:embed "footer.php" />
 <?php COUCH::invoke(); ?>

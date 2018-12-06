@@ -1,6 +1,6 @@
+.idea/
+couch/uploads/
 
-.idea/ikt-page.iml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/inspectionProfiles/profiles_settings.xml
+couch/config.php
+osakondi_couch.sql
+ikt-page.sql

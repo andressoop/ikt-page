@@ -7,11 +7,11 @@
             <cms:editable name='uudis_title_en' label="(ENG) Uudise pealkiri" group="group_uudised" order="2" type='text'/>
             <cms:editable name='uudis_content_ee' label="(EST) Uudise sisu" group="group_uudised" order="3" type='richtext'/>
             <cms:editable name='uudis_content_en' label="(ENG) Uudise sisu" group="group_uudised" order="4" type='richtext'/>
-            <cms:editable name='blog_image' group="group_uudised" order="5" label="Pilt"
-               crop='1'
-               width='640'
-               height='400'
-               type='image'
+            <cms:editable name='blog_image' group="group_uudised" order="5" label="Pilt" desc="Pildi suurus kohandatakse automaatselt tavalise foto 3:2 (720x480) mõõtmetesse"
+                          crop='1'
+                          width='720'
+                          height='480'
+                          type='image'
             />
     </cms:template>
 
